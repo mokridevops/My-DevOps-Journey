@@ -52,7 +52,7 @@ Now login to Ubuntu machine by using MobaXterm
 ![Screenshot 2025-03-30 075948](https://github.com/user-attachments/assets/a06a8c65-2a7d-4bc2-ae54-1ef7e9867968)
 
 
-###Shell Commands:
+### Shell Commands:
 ls - list
 pwd - present working directory
 cd - change directory
