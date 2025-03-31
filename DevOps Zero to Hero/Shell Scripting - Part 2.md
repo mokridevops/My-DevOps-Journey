@@ -59,6 +59,7 @@ what is the output of this command?
 
 date | echo "today"
 Answer: today
+
 why  is it displaying only - today
 
 Reason:  date command is a system default command which sends it's output to stdin, however | (pipe) command receives the output from the previous command, not from stdin.
