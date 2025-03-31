@@ -58,6 +58,7 @@ Shell commands to work on files:
 what is the output of this command?
 
 date | echo "today"
+
 Answer: today
 
 why  is it displaying only - today
