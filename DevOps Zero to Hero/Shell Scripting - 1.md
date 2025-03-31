@@ -76,6 +76,43 @@ Cat first-shell-script.sh ---> to view the contents of the file
 ![image](https://github.com/user-attachments/assets/a8f3cbda-c0fe-4c8e-86f0-64082d33d0b5)
 
 
+How to execute the file:
+
+sh first-shell-script.sh
+
+or
+
+./first-shell-script.sh
+
+![image](https://github.com/user-attachments/assets/f1ce5da6-5677-4df6-910c-5266a136641f)
+
+
+
+
+Linux Command to grant permissions:
+
+chmod -> grants permissions
+
+
+![image](https://github.com/user-attachments/assets/b4817b10-1c96-4e6b-b738-bbe6ac57a4a6)
+
+
+chmod - is divided into 3 categories:
+-> what are permission for admin user?
+-> what are permissions to the group?
+-> what are permission for you?
+
+
+chmod 777 first-shell-script.sh -> this means granting the access to eveybody, now you can execute the file:
+
+![image](https://github.com/user-attachments/assets/3212c0d1-6c20-47f6-9cd4-4c88278f89d9)
+
+
+![image](https://github.com/user-attachments/assets/68677021-3f8e-47a3-8d74-9db6d88445e3)
+
+
+
+
 
 
 
