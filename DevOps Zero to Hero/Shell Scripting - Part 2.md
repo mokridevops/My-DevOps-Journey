@@ -22,3 +22,19 @@ disk space | free memory on the disk | number of CPU's | Analyze node health sta
 
 ![image](https://github.com/user-attachments/assets/1eae9add-c706-4e2b-96d3-f0848c2164e1)
 
+![image](https://github.com/user-attachments/assets/135ea5c6-5b39-4f7a-8df9-2bb7669905d9)
+
+
+
+Linux Command:
+
+To get list of processes running on your Machine
+
+ps -ef
+
+![image](https://github.com/user-attachments/assets/1eabcc64-1347-4e0b-9a87-9c544e15400b)
+
+ps -ef | grep "amazon"
+
+![image](https://github.com/user-attachments/assets/8ef4dc09-8ed3-4086-8fac-1bee1adf5911)
+
