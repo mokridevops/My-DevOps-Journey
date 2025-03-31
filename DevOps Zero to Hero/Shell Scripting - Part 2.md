@@ -63,7 +63,7 @@ Answer: today
 
 why  is it displaying only - today
 
-Reason:  date command is a system default command which sends it's output to stdin, however | (pipe) command receives the output from the previous command, not from stdin.
+Reason:  date command is a system default command which sends it's output to stdin, however | (pipe) command receives the output from the previous command, not from stdin, that's why it only displays "today".
 
 ![image](https://github.com/user-attachments/assets/b7ad81e9-082a-43dd-91f4-c81417845097)
 
