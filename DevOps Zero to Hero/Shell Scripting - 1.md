@@ -151,6 +151,27 @@ history
 
 
 
+# Purpose of Shell Scripting in DevOps
+
+
+![image](https://github.com/user-attachments/assets/c4be10b9-1efb-46a6-a402-93781fbc7fef)
+
+In DevOps we use shell scripts for:
+1) Infrastructure maintenance
+2) Code in Git (which we use Linux)
+3) Configuration Management (Ansible) - In order to go to the machine and the folder where Ansible scripts are present we use shell scripts to go there.
+
+
+
+
+![image](https://github.com/user-attachments/assets/a3394f76-d928-48a6-b789-b154bd0b6124)
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/cdbb5416-43d7-47ea-b456-83b2f2998435)
 
 
 
