@@ -62,6 +62,19 @@ Answer: previously both are same as #!/bin/sh is redirected to #!/bin/bash, howe
 
 
 
+![image](https://github.com/user-attachments/assets/ebadd716-284a-4123-a976-d8905bead47d)
+
+
+![image](https://github.com/user-attachments/assets/b96132fb-f018-43fc-b82a-64a483b7c64e)
+
+
+
+Linux Command:
+
+Cat first-shell-script.sh ---> to view the contents of the file
+
+![image](https://github.com/user-attachments/assets/a8f3cbda-c0fe-4c8e-86f0-64082d33d0b5)
+
 
 
 
