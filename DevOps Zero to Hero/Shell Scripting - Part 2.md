@@ -38,3 +38,33 @@ ps -ef | grep "amazon"
 
 ![image](https://github.com/user-attachments/assets/8ef4dc09-8ed3-4086-8fac-1bee1adf5911)
 
+| -> pipe command - sends the output of the first command to the second command
+
+![image](https://github.com/user-attachments/assets/77343efa-2b50-4b92-8a92-4392bbf8362d)
+
+![image](https://github.com/user-attachments/assets/9ed6266d-111c-48f2-b3a1-37db638b8b5e)
+
+
+
+Shell commands to work on files:
+
+-> Set -x  # debug    ----> this is to print your command in debug mode, and print the shell commands before displaying the output
+-> ps -ef             ----> displays all the processes that are running on a virtual machine
+-> grep               ----> filter some some information from the output
+-> |    (pipe command)----> get the output from the first command and send it to the second command
+
+
+# Interview Question
+what is the output of this command?
+
+date | echo "today"
+Answer: today
+why  is it displaying only - today
+
+Reason:  date command is a system default command which sends it's output to stdin, however | (pipe) command receives the output from the previous command, not from stdin.
+
+![image](https://github.com/user-attachments/assets/b7ad81e9-082a-43dd-91f4-c81417845097)
+
+
+
+
