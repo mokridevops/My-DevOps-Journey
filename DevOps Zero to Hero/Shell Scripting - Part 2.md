@@ -69,4 +69,34 @@ Reason:  date command is a system default command which sends it's output to std
 
 
 
+Linux Command:
+
+awk - to ge process id from the row that we got from grep command
+
+![image](https://github.com/user-attachments/assets/d961c019-3d6b-4065-9260-eefa2e19deae)
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/867a25be-27ea-453d-8f49-4419a14764da)
+
+![image](https://github.com/user-attachments/assets/af599f8a-7022-4489-bf20-397de1ab61ab)
+
+Awk command:
+Awk - F " " '{print $4}'
+![image](https://github.com/user-attachments/assets/5afe684a-4261-4c70-b93b-6768da5ec015)
+
+
+![image](https://github.com/user-attachments/assets/902a3ac9-2aa9-4014-aac2-06b744584d3c)
+
+![image](https://github.com/user-attachments/assets/eade9807-b596-4d9d-91a2-998e91735cc8)
+
+
+
+
+
+
+
+
 
