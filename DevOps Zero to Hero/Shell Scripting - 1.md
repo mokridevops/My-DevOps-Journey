@@ -174,6 +174,34 @@ In DevOps we use shell scripts for:
 ![image](https://github.com/user-attachments/assets/cdbb5416-43d7-47ea-b456-83b2f2998435)
 
 
+# Interview Question:
+
+Why are you using shell scripting?
+
+Answer:  You can say - I have automated, all the Node Health of my VM's, we have some 1000 VM's, everytime it is difficult to monitor the Node Health or Status of this Virtual Machine, so I decided to write a script, then the next question:
+there are some automated tools, why you are using this shell scripting? 
+Answer: You can say - In our organization we are not using such tools, or say that - these tools are restricted from generating some parameters, only a restricted number of parameters, In my script I am fetching more parameters, which are not provided by those tools.
+
+
+
+
+![image](https://github.com/user-attachments/assets/ff75c5e1-e18f-4ce5-892c-b4f6a89a603b)
+
+
+# Interview Question:
+
+How do you monitor the Node Health?
+Answer: by using Top Command, or I can write the custom shell scripts
+
+![image](https://github.com/user-attachments/assets/125564e5-45f8-4b26-898c-002c26671fb2)
+
+
+
+# Interview Question:
+
+What are the parameters that are used to monitor Node Health?
+Answer: Some basic parameters are: CPU and RAM
+
 
 
 
