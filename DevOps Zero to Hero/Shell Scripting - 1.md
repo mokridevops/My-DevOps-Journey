@@ -23,6 +23,7 @@ To wirte a shell script:
 
 
 Question - If we are able to create a file using - touch command, and then user vi to create and open the file, or directly use vi to create and open the file, then what is the use of touch commmand?
+
 Answer: 
 Touch command is used in automations, Vim is used to wirte inside the file, but for automations we need touch command to create a file, we dont need it to be opened, and we will be having some thousands of files, for which when we automate - we cannot use the command vi file_name, as in automation it will create 1000 files, and opens 1000 files, which can make the system hang.
 
