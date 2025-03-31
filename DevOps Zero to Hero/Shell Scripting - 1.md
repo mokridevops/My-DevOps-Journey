@@ -112,6 +112,46 @@ chmod 777 first-shell-script.sh -> this means granting the access to eveybody, n
 
 
 
+![image](https://github.com/user-attachments/assets/0c485743-7e3b-4484-a223-cc90a95481a6)
+
+
+![image](https://github.com/user-attachments/assets/38e04302-0459-49c2-ac5d-4740638d8b18)
+
+
+![image](https://github.com/user-attachments/assets/0e53b6f4-75d8-4664-aa6d-0f6463f4902a)
+
+
+Linux Command:
+
+history
+
+![image](https://github.com/user-attachments/assets/6a7109ee-a997-47a1-a869-4292609682bc)
+
+
+
+![image](https://github.com/user-attachments/assets/49458418-a3d7-4139-a2a0-d8631bba86e1)
+
+
+
+
+![image](https://github.com/user-attachments/assets/ceea656e-6ee8-470c-b5c5-e56d022a90f8)
+
+
+
+![image](https://github.com/user-attachments/assets/e44df2e8-c394-4509-bfc0-a66015b76265)
+
+![image](https://github.com/user-attachments/assets/5b2f9ddb-01a9-4ebd-a907-acfda2822761)
+
+
+![image](https://github.com/user-attachments/assets/9eca73fd-a1e1-41c7-95c5-4a91b06efd0a)
+
+![image](https://github.com/user-attachments/assets/6451420b-fb02-4b7c-a54d-53a2f968047b)
+
+![image](https://github.com/user-attachments/assets/9eb88d17-d4b0-413e-af74-0178bf86ac9f)
+
+
+
+
 
 
 
