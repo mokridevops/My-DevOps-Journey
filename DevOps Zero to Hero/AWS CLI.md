@@ -1,4 +1,4 @@
-#AWS CLI:
+# AWS CLI:
 
 Connect your local Windows Command Prompt to AWS
 
