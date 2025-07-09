@@ -36,6 +36,10 @@ By creating a new access key you can connect to the AWS CLI from your command pr
 
 so by this you can connect to aws cli from your command prompt, and access all the components of the aws console, and you can write shell script and execute on command prompt to automate creating 100's of EC2 instance or S3 buckets etc.
 
+command to create Ec2 instance through script using CLI:
+
+![image](https://github.com/user-attachments/assets/a2d92bba-63f2-4e80-9fef-4b12166cb745)
+
 
 
 
