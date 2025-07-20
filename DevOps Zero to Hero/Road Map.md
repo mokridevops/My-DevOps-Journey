@@ -34,9 +34,13 @@ Secrets management - Hashicorp Vault
    # Good to have skills
 
    -> Observability (SRE skill) - Site Reliability Engineer
+   
        -> metrics
+       
        -> monitoring
+       
        -> logging
+       
        -> tracing
 
        tools: Datadog, dynatrace - for enterprize level
