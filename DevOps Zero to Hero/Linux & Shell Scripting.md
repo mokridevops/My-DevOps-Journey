@@ -16,7 +16,7 @@ Linux:
 ![Screenshot 2025-03-30 073949](https://github.com/user-attachments/assets/f86bbdae-cac1-4c41-a620-9dded954bd7e)
 
 
-Kernel - communication b/w hardward to software (Heart of the Operating System)
+Kernel - communication b/w hardware to software (Heart of the Operating System)
 1. Device Management
 2. Memory Management
 3. Process Management
