@@ -30,14 +30,22 @@ Secrets management - Hashicorp Vault
 # Python
 
 -> how do you use python as devops engineer
+
 -> fundamentals
+
    -> variables
+   
    -> data types
+   
    -> If
+   
    -> Loops
-   -> Virtual environment in python - as devops engineer - you create virtual enviorment - and use Virtual environment to implemtn things - exL when using ansible
+   
+   -> Virtual environment in python - as devops engineer - you create virtual enviorment - and use Virtual environment to implement things - ex when using ansible
+
    -> API calls using python - what module to use
-   -> interact with Git Hub Actions, Web hook, or create a Jira ticket using Python
+   
+   -> interact with Git Hub Actions, Webhook, or create a Jira ticket using Python
 
 
    # Good to have skills
@@ -53,6 +61,7 @@ Secrets management - Hashicorp Vault
        -> tracing
 
        tools: Datadog, dynatrace - for enterprize level
+       
               Prometheus, Opentelemetry - Open Source
               
 
