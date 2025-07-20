@@ -4,6 +4,7 @@ IAC - Infrastructe as Code
 
 7 - 8 days
 
+
 IAC, Terraform
 Providers
 Init, Plan, Apply
