@@ -63,6 +63,13 @@ Secrets management - Hashicorp Vault
        tools: Datadog, dynatrace, NewRelic - for enterprize level
        
               Prometheus, Opentelemetry - Open Source
-              
+
+
+   -> AIOPS -- using AI - solve to automate IT operations
+          -> how to run the models locally using AI
+          -> how to use Olama
+          -> how to use AI to solve issues with a kubernetes pod - and AI will automatically connect to OpenAI or ChatGPT and then get the solution for the issue with the POD, and give the necessary steps to resolve the issues.
+          
+   
 
        
