@@ -6,14 +6,23 @@ IAC - Infrastructe as Code
 
 
 IAC, Terraform
+
 Providers
+
 Init, Plan, Apply
+
 Terraform State file, and how terraform implements the State management
+
 provsioners
+
 variable structures
+
 modules
+
 environments in Terraform
+
 Implement project in Terraform
+
 Secrets management - Hashicorp Vault
 
 
