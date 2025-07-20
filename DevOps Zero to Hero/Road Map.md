@@ -52,15 +52,15 @@ Secrets management - Hashicorp Vault
 
    -> Observability (SRE skill) - Site Reliability Engineer
    
-       -> metrics
+       -> metrics         -- prometheus, Open Telemetry
        
-       -> monitoring
+       -> monitoring      -- premetheus, grafana
        
-       -> logging
+       -> logging         -- ELK Stack
        
-       -> tracing
+       -> tracing         --
 
-       tools: Datadog, dynatrace - for enterprize level
+       tools: Datadog, dynatrace, NewRelic - for enterprize level
        
               Prometheus, Opentelemetry - Open Source
               
