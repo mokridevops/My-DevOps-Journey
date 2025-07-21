@@ -10,14 +10,9 @@ nproc - number of cpu's of current machine
 top - what are currently running processes, how many tasks are running at this point, stopped processes, sleeping processes, which processes are consuming how much amount of CPU, how much amount of memory.
 
 
-![image](https://github.com/user-attachments/assets/690f5892-1bc4-41eb-bf71-8af6b698159d)
-
-
-
-
-
 ![image](https://github.com/user-attachments/assets/493d4c35-0c7b-4aa1-9399-e0e25d5dbefe)
 
+![image](https://github.com/user-attachments/assets/690f5892-1bc4-41eb-bf71-8af6b698159d)
 
 
 ![image](https://github.com/user-attachments/assets/1997030e-28e6-43f7-beeb-97ef287d5bb8)
