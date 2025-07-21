@@ -147,6 +147,8 @@ history - is to look at all the commands that were used in the past till now.
 ![image](https://github.com/user-attachments/assets/49458418-a3d7-4139-a2a0-d8631bba86e1)
 
 
+to list current working directory or present working directory - pwd:
+
 
 
 ![image](https://github.com/user-attachments/assets/ceea656e-6ee8-470c-b5c5-e56d022a90f8)
