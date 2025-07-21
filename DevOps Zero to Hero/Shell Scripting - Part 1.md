@@ -217,10 +217,4 @@ Answer: by using Top Command, or I can write the custom shell scripts
 # Interview Question:
 
 What are the parameters that are used to monitor Node Health?
-Answer: Some basic parameters are: CPU and RAM
-
-
-
-
-
-
+Answer: Some basic parameters are: CPU and RAM 
