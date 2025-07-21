@@ -4,6 +4,11 @@
 df | free | nproc | top
 disk space | free memory on the disk | number of CPU's | Analyze node health status
 
+df - available storage space on the VM
+free - memory of the machine
+nproc - number of cpu's of current machine
+top - what are currently running processes, how many tasks are running at this point, stopped processes, sleeping processes, which processes are consuming how much amount of CPU, how much amount of memory.
+
 
 ![image](https://github.com/user-attachments/assets/690f5892-1bc4-41eb-bf71-8af6b698159d)
 
