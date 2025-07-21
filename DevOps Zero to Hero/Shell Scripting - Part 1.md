@@ -15,6 +15,12 @@ touch first-shell-script.sh
 
 Linux command:
 
+ls - listing the files/folders
+ls -ltr - listing the files with date and timestamp, permissions etc
+touch - to create a file
+
+
+
 man ls    (man stands for manual) - prefix any command with - man - it will give the details about that command
 
 man touch
