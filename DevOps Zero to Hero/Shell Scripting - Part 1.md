@@ -1,5 +1,8 @@
 #  Shell Scripting for DevOps - Part 1
 
+
+Shell Scripting in Linux - is  a process of automating your regular day to day activities on your Linux compute.
+
 to create file on Linux machine:
 touch first-shell-script.sh
 
