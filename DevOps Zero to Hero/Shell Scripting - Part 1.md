@@ -137,6 +137,9 @@ Linux Command:
 
 history - is to look at all the commands that were used in the past till now.
 
+<img width="368" height="273" alt="image" src="https://github.com/user-attachments/assets/e16a5d86-936f-44e5-8ca2-62a2ea730b55" />
+
+
 ![image](https://github.com/user-attachments/assets/6a7109ee-a997-47a1-a869-4292609682bc)
 
 
