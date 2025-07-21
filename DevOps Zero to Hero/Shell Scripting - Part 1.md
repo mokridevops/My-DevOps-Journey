@@ -3,6 +3,9 @@
 
 Shell Scripting in Linux - is  a process of automating your regular day to day activities on your Linux compute.
 
+<img width="702" height="379" alt="image" src="https://github.com/user-attachments/assets/63f12beb-0cd8-4f40-a23c-5122ad4aeeaf" />
+
+
 to create file on Linux machine:
 touch first-shell-script.sh
 
