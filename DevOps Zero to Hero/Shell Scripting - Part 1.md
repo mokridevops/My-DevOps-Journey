@@ -135,7 +135,7 @@ chmod 777 first-shell-script.sh -> this means granting the access to eveybody, n
 
 Linux Command:
 
-history
+history - is to look at all the commands that were used in the past till now.
 
 ![image](https://github.com/user-attachments/assets/6a7109ee-a997-47a1-a869-4292609682bc)
 
