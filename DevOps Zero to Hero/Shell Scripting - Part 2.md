@@ -96,6 +96,21 @@ Awk - F " " '{print $4}'
 
 <img width="875" height="730" alt="image" src="https://github.com/user-attachments/assets/f65d56c8-3f6c-409c-a723-12bd2e125326" />
 
+set -x # to enable debug mode
+set -e # to error out when any step in the script fails, and not execute other rows
+set -o pipefail  # set - e will only look for the last command in the script line,  for example:
+
+the script is:
+
+
+adfasdfasdfas | echo   --> set -e will execute without any issue
+
+if the script is:
+
+asdfasdfasdfas | echo | asdfasdfasdfas  --> set -e will error out --> basically it only looks for the last command and see if it is working fine or not, so we use ---> set -o pipefail
+
+
+
 
 
 
