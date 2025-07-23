@@ -94,6 +94,11 @@ Awk - F " " '{print $4}'
 
 
 
+<img width="875" height="730" alt="image" src="https://github.com/user-attachments/assets/f65d56c8-3f6c-409c-a723-12bd2e125326" />
+
+
+
+
 
 
 
