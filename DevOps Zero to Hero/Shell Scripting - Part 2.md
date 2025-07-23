@@ -127,3 +127,161 @@ so, whenever you use set -e, you make sure you also use -> set -o pipefail
 also people will write as:
 
 set -exo pipefail - this is also correct, but it is not a good practice.
+
+
+LOG FILES:
+
+
+
+<img width="1373" height="489" alt="image" src="https://github.com/user-attachments/assets/ac905e14-b026-432a-9009-da9a942ef8f1" />
+
+
+<img width="1398" height="748" alt="image" src="https://github.com/user-attachments/assets/563ed85c-9c91-4103-b556-ff16f700757c" />
+
+<img width="845" height="82" alt="image" src="https://github.com/user-attachments/assets/675329c0-841c-414e-b6a6-2828b6bb40a5" />
+
+
+<img width="875" height="180" alt="image" src="https://github.com/user-attachments/assets/f804c6da-98b8-41a0-9761-63a5aebb29a0" />
+
+where ever there are more and more logs, people will usually upload them to --> Google storage, or Amazon S3 or Azure Blob storage
+
+now, it is our responsibility to pull it from there:
+
+<img width="1372" height="557" alt="image" src="https://github.com/user-attachments/assets/dce5e4ab-0d37-4421-b3a5-f2bc2db1694e" />
+
+curl command retreives the information from Internet
+
+<img width="1367" height="453" alt="image" src="https://github.com/user-attachments/assets/a615abc8-3394-4d86-8d98-2146873ab17f" />
+
+curl storage_location_of_the_logs | grep ERROR
+
+
+
+Another command: wget --> it downloads the log file to the local
+
+<img width="1374" height="678" alt="image" src="https://github.com/user-attachments/assets/9164c3bc-8a3e-45ea-8d19-d8050ba3f188" />
+
+Curl - shared the output to you
+wget - stored the information in the log file in the local
+
+
+
+<img width="927" height="156" alt="image" src="https://github.com/user-attachments/assets/ee4deeac-5411-4cf1-b28b-12a012f63368" />
+
+
+
+<img width="1369" height="615" alt="image" src="https://github.com/user-attachments/assets/716682b0-0fc6-4681-934e-bf1b7e43e637" />
+
+<img width="1370" height="298" alt="image" src="https://github.com/user-attachments/assets/a06d1b3f-af92-4d3e-837b-a9f16c53b7a2" />
+
+
+# Interview Question
+
+# what is the difference between Curl and Wget?
+
+
+
+------------------
+
+Another command:  Find
+<img width="700" height="46" alt="image" src="https://github.com/user-attachments/assets/52bb69ae-0562-43d0-9dad-8a9a2fe34a62" />
+
+find / -name pam.d
+
+/ - is - find everything
+-name - name of the file
+pam.d - is actual file name
+
+
+-----
+# Root User
+
+Root - is a powerful user - we can delete anything, if the file is deleted - if there is no snapshot and file is not mounted on a volume - there will be no backup
+
+
+sudo su -       ---> sudo means - substitute user do
+
+su - is switch user
+
+<img width="752" height="288" alt="image" src="https://github.com/user-attachments/assets/457e2b67-0e88-4942-9d9b-d4bbf67d00a1" />
+
+
+<img width="545" height="163" alt="image" src="https://github.com/user-attachments/assets/8bb49ffe-292e-48b0-89bb-cade862ae10d" />
+
+
+sudo su -   ---> it will take to root user
+
+sudo will give you sudo privileges
+
+not everybody will be going to root user
+
+always use - ubuntu user -> only when you need to use root user -> then only switch to root user
+
+
+
+
+<img width="594" height="178" alt="image" src="https://github.com/user-attachments/assets/fc30251d-cbf8-40bc-81d1-3cae32e1ab3f" />
+
+ when you type --- logout --- you will be switched from root user to the ubuntu user
+
+ 
+
+
+<img width="949" height="325" alt="image" src="https://github.com/user-attachments/assets/e45a361c-2d36-4417-a670-265df4fa68e5" />
+
+
+if we do --> find / -name pam   ---> we get access denied
+
+
+
+<img width="884" height="278" alt="image" src="https://github.com/user-attachments/assets/74adce72-ed6e-45a3-9b18-ca7783d2dc97" />
+
+
+
+<img width="1029" height="678" alt="image" src="https://github.com/user-attachments/assets/deaebdb9-468d-43d0-8b8d-0d9b639fceb5" />
+
+<img width="730" height="326" alt="image" src="https://github.com/user-attachments/assets/6c619833-dfac-416e-b039-6782a1202399" />
+
+
+
+#  if loop, ifelse loop, for loop
+
+<img width="772" height="149" alt="image" src="https://github.com/user-attachments/assets/c859bbc7-7c59-40a1-9f02-f5bb1da7604c" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
