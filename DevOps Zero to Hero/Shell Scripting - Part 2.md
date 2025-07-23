@@ -120,3 +120,10 @@ so, whenever you use set -e, you make sure you also use -> set -o pipefail
 
 
 
+
+
+<img width="844" height="685" alt="image" src="https://github.com/user-attachments/assets/056cd833-0bd5-4bc8-b570-c4fcdd9b72ef" />
+
+also people will write as:
+
+set -exo pipefail - this is also correct, but it is not a good practice.
