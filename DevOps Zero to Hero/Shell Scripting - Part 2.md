@@ -69,7 +69,7 @@ Reason:  date command is a system default command which sends it's output to std
 
 
 
-Linux Command:
+Linux Command:  awk - is a pattern scanning and processing language
 
 awk - to ge process id from the row that we got from grep command
 
