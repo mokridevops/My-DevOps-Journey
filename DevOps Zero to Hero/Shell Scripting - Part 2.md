@@ -250,6 +250,9 @@ if we do --> find / -name pam   ---> we get access denied
 
 
 
+<img width="433" height="308" alt="image" src="https://github.com/user-attachments/assets/f6f1a1cc-46c0-4796-85d8-5343361df9cb" />
+
+
 
 
 
