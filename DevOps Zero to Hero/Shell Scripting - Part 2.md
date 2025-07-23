@@ -253,9 +253,34 @@ if we do --> find / -name pam   ---> we get access denied
 <img width="433" height="308" alt="image" src="https://github.com/user-attachments/assets/f6f1a1cc-46c0-4796-85d8-5343361df9cb" />
 
 
+<img width="534" height="349" alt="image" src="https://github.com/user-attachments/assets/5ca67e0b-8117-4d0b-97df-c435bd874748" />
+
+<img width="665" height="431" alt="image" src="https://github.com/user-attachments/assets/d9d034d9-1601-4dc7-aaed-9cbcedd9677b" />
 
 
 
+
+
+# iteraations -> for
+
+for i in {1.100}; do echo $1; done
+
+for 
+do
+     increment
+
+done
+
+
+
+
+# another command: trap
+
+<img width="1115" height="583" alt="image" src="https://github.com/user-attachments/assets/e19cdd8e-e8e9-44f3-ac70-0e4d669ae418" />
+
+trap ^C
+
+trap "echo dont use the ctrl+C"  SIGINT^C
 
 
 
