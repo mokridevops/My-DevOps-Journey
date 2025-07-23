@@ -111,7 +111,7 @@ asdfasdfasdfas | echo | asdfasdfasdfas  --> set -e will error out --> basically 
 
 
 
-
+so, whenever you use set -e, you make sure you also use -> set -o pipefail
 
 
 
