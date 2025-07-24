@@ -274,7 +274,7 @@ done
 
 
 
-# another command: trap
+# another command: trap - trap command helps to remove the functioning of a command. Suppose if we are executing a huge shell script, and if we dont want someone to stop our execution by pressing ctrl+C, then we use trap to remove the functionality of ctrl+C, so no one could stop our commands execution.
 
 <img width="1115" height="583" alt="image" src="https://github.com/user-attachments/assets/e19cdd8e-e8e9-44f3-ac70-0e4d669ae418" />
 
