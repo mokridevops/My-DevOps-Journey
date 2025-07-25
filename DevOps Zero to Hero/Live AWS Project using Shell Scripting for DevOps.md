@@ -1,6 +1,6 @@
 
 # Requirement:  
-In our organization, As a DevOps engineer I have created lot of EC2 instance, S3 buckets, Lambda functions and lot of user in IAM module.  However, we don't know how much of it are being used by users to the full extent.
+In our organization, As a DevOps engineer I have created lot of EC2 instances, S3 buckets, Lambda functions and lot of user in IAM module.  However, we don't know how much of it are being used by users to the full extent.
 
 For that, we will write a Shell Script and get the counts in a file, and try to run it every day at 6 PM by using a ChronJob.
 
