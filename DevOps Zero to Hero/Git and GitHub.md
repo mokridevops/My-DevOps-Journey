@@ -53,6 +53,96 @@ Git : is the version control system, Github is a wrapper on top of git to solve 
 
 
 
+###  Git Commands:
+
+Install Git:
+
+
+
+<img width="1440" height="969" alt="image" src="https://github.com/user-attachments/assets/3d84b8f3-90ae-447d-aebd-d3c208347a6a" />
+
+<img width="673" height="784" alt="image" src="https://github.com/user-attachments/assets/2f4c78c7-6c9c-4370-a45f-3292b357134c" />
+
+
+
+to install git on Linux:
+# apt-get install git
+
+git init - to initialze an empty Git repository
+
+
+<img width="965" height="510" alt="image" src="https://github.com/user-attachments/assets/186a491f-9c8d-4638-a982-2a1af9661917" />
+
+
+<img width="676" height="448" alt="image" src="https://github.com/user-attachments/assets/86ed9025-e693-41bf-b85c-8a68b21aa3d7" />
+
+
+after you intialize an empty git repository, a hidden .git file is created which is in blue color, essentially it tracks every thing using this .git file
+
+never delete this .git file, if you delete it will not track the changes
+
+
+git add, git commit, git push
+
+
+
+three commands that every devops engineer should learn:
+
+basically life cycle of git:
+
+<img width="1152" height="580" alt="image" src="https://github.com/user-attachments/assets/f418d7bd-ef79-45ad-b6dc-80d20ee02d8d" />
+
+
+<img width="681" height="111" alt="image" src="https://github.com/user-attachments/assets/a77fcb01-de4c-4a9a-a84b-0595945fcb99" />
+
+these are the things that git uses for tracking and commiting this entire repository
+
+
+refs and objects - every file that you create inside git - is tracked as objects 
+hooks - is a folder - ex: if someone unintentionally commiting some passwords or tokens, using hooks you can prevent such things
+config - to configure your git credentials, secure git repository which need secrets, or TLS or certificates
+HEAD - 
+
+
+git status - 
+ 
+<img width="1287" height="449" alt="image" src="https://github.com/user-attachments/assets/a7afd834-88b9-4d3d-acf8-e6d3d86614f9" />
+
+
+
+
+<img width="1084" height="664" alt="image" src="https://github.com/user-attachments/assets/2eaf077d-02cb-4404-be88-784f1f08cefb" />
+
+
+git add  filename -
+
+git diff - to track the differences after the file is added to git and then doing some change to the file after adding the file to git
+
+<img width="595" height="397" alt="image" src="https://github.com/user-attachments/assets/ea9ddd8b-46be-4d5f-9922-8440a6ed8383" />
+
+<img width="961" height="380" alt="image" src="https://github.com/user-attachments/assets/b8f77719-b448-4de0-a5ba-d1ec1a0863a9" />
+
+it is saying - you added a new line + echo a+b
+
+<img width="941" height="268" alt="image" src="https://github.com/user-attachments/assets/a861307d-42e4-4ca1-a41a-0353417fbc6b" />
+
+
+<img width="905" height="678" alt="image" src="https://github.com/user-attachments/assets/689b85e1-8dd3-4861-8094-9a0f00350b8a" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
