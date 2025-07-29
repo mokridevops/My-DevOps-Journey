@@ -133,10 +133,44 @@ it is saying - you added a new line + echo a+b
 
 
 
+git commit -m "comments"
+
+git diff
+
+git status
+
+git log
 
 
 
 
+
+<img width="1036" height="149" alt="image" src="https://github.com/user-attachments/assets/3f35bee8-f5af-475f-9c63-a20df01f9732" />
+
+
+
+
+<img width="429" height="45" alt="image" src="https://github.com/user-attachments/assets/3303f7d5-54c4-436d-ae48-78ae5e01a076" />
+
+
+
+<img width="892" height="338" alt="image" src="https://github.com/user-attachments/assets/bfbca952-6361-4fc3-8f8c-51a575c37e69" />
+
+if we want to go back to commit number 1:
+
+git reset --hard commit number 1
+
+<img width="702" height="321" alt="image" src="https://github.com/user-attachments/assets/513b0096-4d8d-411a-9e40-b356bd37c478" />
+
+
+
+<img width="929" height="159" alt="image" src="https://github.com/user-attachments/assets/cf390796-dafe-41d0-a946-3128b4bfcd55" />
+
+
+so using git, you can switch to any previous version
+
+
+<img width="735" height="98" alt="image" src="https://github.com/user-attachments/assets/3dd6b000-fbbb-42e6-a161-75e02c514a89" />
 
 
 
