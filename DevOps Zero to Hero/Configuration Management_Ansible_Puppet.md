@@ -69,6 +69,12 @@ so the devops engineer, can write ansible palybook script on his laptop and the 
 - Ansible is pretty easy with both Windows and Linux - support for windows and Linux is very good with Ansible.
 - Ansible is pretty simple - uses simple yaml manifests
 
+- - Ansible is written in python - you can write your own Ansible modules
+ 
+  - sharing is always possible between two devops teams using Ansible Galaxy.
+ 
+  
+
 
 Puppet - uses - Master/Slave architecture
 
@@ -88,8 +94,50 @@ Puppet language
 
 
 
+<img width="1032" height="642" alt="image" src="https://github.com/user-attachments/assets/3082c894-3644-4f67-bf1f-a32fc6ae346a" />
 
 
+
+Ansible - Disadvantages:
+
+windows configuration management is slightly difficult compared to linux configuration management
+Debugging - no proper mechanism to understand where has the playbook execution ran in to a problem
+Performance - issues  --- it can execute on 10,000 servers - but you might run into performance issues, Ansible is dealing with these issues
+
+<img width="524" height="476" alt="image" src="https://github.com/user-attachments/assets/309bbe44-4c56-4093-858b-beb5cbd0ba7d" />
+
+
+<img width="936" height="629" alt="image" src="https://github.com/user-attachments/assets/66c6f743-799c-443a-af04-839f50f9b9c8" />
+
+
+
+
+# 18 most asked Ansible Interview Questions:
+
+1) what is the programming language that Ansible uses? did you write any custom modules in Ansible?
+   python is the programing language which Ansible is using.  you can write your own modules using python and contribute to Ansible. I didn't get any requirement to write custome modules in python for Ansible.
+
+2) Does Ansible support Linux and Windows or only Linux?
+   Supports both linux and windows .
+   For linux - it uses protocal called - SSH
+   For windows - it uses protocol called - Win Rm
+   
+<img width="940" height="570" alt="image" src="https://github.com/user-attachments/assets/0af1b737-4a58-4ea0-be35-e65d02278685" />
+
+3) Why did you choose Ansibel over other configuration management tools like Puppet and Chef?
+
+4) Is Ansible PUSH mechanism or PULL mechanism ?
+
+PUSH mechanism
+
+5) what programming language that Ansible supports?
+   Yaml manifests in Anisible to wirte Anisble playbooks
+
+6) does Ansible supports all the cloud providers?
+      For Ansible it does not matter clould providers
+      what matters is: IP Address
+      do you have SSH enabled to this machine, or is the SSH for this machine allowed from your Ansible host or your laptop. 
+   
 
 
 
