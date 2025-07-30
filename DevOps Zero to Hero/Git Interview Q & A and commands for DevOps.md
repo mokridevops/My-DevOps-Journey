@@ -84,7 +84,108 @@ to push to a remote repository that is already present:
 you clone the repository
 
 
+<img width="818" height="270" alt="image" src="https://github.com/user-attachments/assets/e3e79252-2edd-4290-b712-7a79a0dafe68" />
 
+
+
+
+# Interview Question:
+
+# How to pull code from github
+
+git clone
+
+
+
+<img width="1273" height="617" alt="image" src="https://github.com/user-attachments/assets/cbcc2f5f-27fb-4f4b-bcee-756665c6e2ef" />
+
+3 ways to clone:
+
+https
+
+<img width="907" height="89" alt="image" src="https://github.com/user-attachments/assets/343a2527-6db3-4947-9ec5-4e6d3ac1166e" />
+
+
+ssh
+
+<img width="1279" height="675" alt="image" src="https://github.com/user-attachments/assets/cac33995-f981-48e9-8bae-52c51ca02807" />
+
+
+when you are using ssh - you are authenticating using public key, https - you authenticate using your password
+
+to generate your ssh public key
+
+ssh-keygen -t rsa
+
+<img width="1176" height="387" alt="image" src="https://github.com/user-attachments/assets/6b37f4e3-0641-4b8c-900a-bce1437f3e91" />
+
+id_rsa.pub is the public key
+
+open the id_rsa.pub file and then paste in the settings of the github UI
+
+<img width="1299" height="727" alt="image" src="https://github.com/user-attachments/assets/d027facd-7ff5-4689-85ab-cf843161130c" />
+
+
+
+<img width="1293" height="721" alt="image" src="https://github.com/user-attachments/assets/c3dd0833-fc82-4e4b-880a-c645fc39b097" />
+
+copy the contents of id_resa.pub in to Key text box
+
+
+once you add ssh public key on the UI settings - from next time whenever you clone using ssh mode - it will not ask you for the password from next time.
+
+
+# Interview Question
+
+# CLONE vs FORK
+
+CLONE: download a specific repository
+
+FORK: is to create a copy of a specific repository.  If we fork a repository today, then that is the latest code that we have and we can work on that repository and make our own changes we will never get any udpates
+
+if we CLONE - it will download the repository and also our repository can be updated regularly by using git pull
+
+due to FORK - we call git as distributed system
+
+
+
+
+
+<img width="473" height="85" alt="image" src="https://github.com/user-attachments/assets/9a76ead0-1d7d-4f11-86cd-d6ff84316355" />
+
+'cd -'  will show you your repository
+
+
+
+--------------
+
+to create branch
+
+git branch
+
+git checkout -b division  : division is new branch
+
+
+<img width="509" height="107" alt="image" src="https://github.com/user-attachments/assets/5107ac9b-3cff-4e82-bd2d-ac4a14de5a53" />
+
+gitdemo git:(main) git checkout -b 
+
+the above means: create a branch from main branch 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+github cli
 
 
 
