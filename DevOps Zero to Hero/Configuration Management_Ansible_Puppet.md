@@ -52,6 +52,40 @@ Ansible is a Push mechanism model
 
 
 
+<img width="977" height="372" alt="image" src="https://github.com/user-attachments/assets/5f1f65e6-b4cd-4b34-a5a2-a9739f303d7a" />
+
+what is Push model for ansible?
+
+so the devops engineer, can write ansible palybook script on his laptop and the configuration is updated using PUSH mechanism to the 10 EC2 instances
+
+- Ansible uses Agentless model i.e
+
+- put names (DNS/IP Addresses) of these Servers in an inventory file  and have password less authentication enabled, with just one click of a button or running the ansible playbook, all the configurations are updated on these 10 EC2 instances.
+
+- So using Ansible, if you have to scale up or scale down - just add public IP addresses in the inventory file and you are good to go, so simple.
+
+- Dynamic Inventory - Ansible will auto detect - if we are adding 100 new servers, Ansible will understand that these new 100 servers are also to be configured along with the existing servers.
+
+- Ansible is pretty easy with both Windows and Linux - support for windows and Linux is very good with Ansible.
+- Ansible is pretty simple - uses simple yaml manifests
+
+
+Puppet - uses - Master/Slave architecture
+
+1 master puppet server
+
+configure 10 EC2 instances as Slaves
+
+now Puppet can make the changes on these respective EC2 instances.
+
+Puppet language
+
+
+
+
+<img width="1011" height="636" alt="image" src="https://github.com/user-attachments/assets/6735212a-af02-4602-ba03-2278b9f501ca" />
+
+
 
 
 
