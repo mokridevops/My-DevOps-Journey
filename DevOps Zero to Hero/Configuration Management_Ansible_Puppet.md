@@ -133,7 +133,37 @@ PUSH mechanism
 5) what programming language that Ansible supports?
    Yaml manifests in Anisible to wirte Anisble playbooks
 
-6) does Ansible supports all the cloud providers?
+
+
+   ---------------------
+
+   Notes Summary:
+
+   Notes of this video-
+
+Scenario- System admin has to configure 100s of servers, each with different OS like Ubuntu, CentOS, Windows.
+Tasks include updating OS, security patches, default installations like git, databases on servers. 
+
+Issue- Doing this manually on every server is difficult. Hence, scripts were used. Powershell scripts for windows machines, other shells for Linux machines. Even in Linux machines, scripts varied based Linux flavours and type of script (bash, zsh, tsh, etc). This script will then loop over all servers to perform configuration tasks.
+
+With cloud and micro service architecture adoption, number of servers have increased further. 
+
+Hence, even scripting approach is not very efficient. This led to concept of configuration management. Various tools are used for configuration management. Puppet and Chef were pioneering tools while Ansible, developed by Red Had is most popular.
+
+Why Ansible over Puppet?
+	1. Puppet = Pull mechanism, Ansible= Push mechanism. Eg. Managing 10 EC2- Write ansible playbook and push to all 10 EC2
+	2. Puppet uses Master-Agent architecture- Have to create Master server and configure all 10 EC2 as agents. Ansible is agentless. Write only ip/dns of machine in inventory file and have passwordless authentication enabled. In case of dynamic demand, auto-scaling is possible by changing inventory file. Even better- 'Dynamic Inventory' feature auto detects demand- doing away need to change inventory file.
+	3. Support for Windows is better in Ansible than Puppet
+	4. Ansible Playbook is written in YAML which is widely used. Puppet configuration is written in Puppet language.
+	
+	
+Issues with Ansible
+	1. Support for Windows is still not seamless
+	2. Debugging is not easy. Can run ansible in debug mode but debugging logs are not easy to understand.
+	3. Performance issues- when managing thousands of servers
+
+
+7) does Ansible supports all the cloud providers?
       For Ansible it does not matter clould providers
       what matters is: IP Address
       do you have SSH enabled to this machine, or is the SSH for this machine allowed from your Ansible host or your laptop. 
