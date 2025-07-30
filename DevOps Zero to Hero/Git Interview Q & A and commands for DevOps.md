@@ -101,12 +101,12 @@ git clone
 
 3 ways to clone:
 
-https
+1) https
 
 <img width="907" height="89" alt="image" src="https://github.com/user-attachments/assets/343a2527-6db3-4947-9ec5-4e6d3ac1166e" />
 
 
-ssh
+2) ssh
 
 <img width="1279" height="675" alt="image" src="https://github.com/user-attachments/assets/cac33995-f981-48e9-8bae-52c51ca02807" />
 
@@ -133,6 +133,9 @@ copy the contents of id_resa.pub in to Key text box
 
 
 once you add ssh public key on the UI settings - from next time whenever you clone using ssh mode - it will not ask you for the password from next time.
+
+3) github cli
+
 
 
 # Interview Question
@@ -168,10 +171,73 @@ git checkout -b division  : division is new branch
 
 <img width="509" height="107" alt="image" src="https://github.com/user-attachments/assets/5107ac9b-3cff-4e82-bd2d-ac4a14de5a53" />
 
-gitdemo git:(main) git checkout -b 
+gitdemo git:(main) git checkout -b division
 
 the above means: create a branch from main branch 
 
+<img width="550" height="107" alt="image" src="https://github.com/user-attachments/assets/cfbb8ca9-3bcd-4e72-a53f-0a6194675d69" />
+
+
+
+
+
+<img width="596" height="119" alt="image" src="https://github.com/user-attachments/assets/02114ce6-6766-4085-90b0-cf592ea80021" />
+
+<img width="307" height="174" alt="image" src="https://github.com/user-attachments/assets/ec6b8c28-61f6-4131-84a2-64edecd94e11" />
+
+
+<img width="246" height="345" alt="image" src="https://github.com/user-attachments/assets/5f58c28e-9500-4795-8c48-199087eae486" />
+
+<img width="804" height="245" alt="image" src="https://github.com/user-attachments/assets/f20ff683-c3f1-4bd2-88cb-cdd48f5ee462" />
+
+<img width="997" height="389" alt="image" src="https://github.com/user-attachments/assets/f21ff438-dc6e-4f05-ad8b-5ae3c2205009" />
+
+git log
+
+<img width="996" height="519" alt="image" src="https://github.com/user-attachments/assets/69490f9f-532f-4d10-b405-4aea979c3cc3" />
+
+<img width="542" height="109" alt="image" src="https://github.com/user-attachments/assets/3c9c2c8a-46e9-4931-b31f-d7dac7eb85da" />
+
+
+<img width="741" height="380" alt="image" src="https://github.com/user-attachments/assets/e9baa183-e2ed-48aa-b58f-8a65bdf147bb" />
+
+
+
+To merge the branches:  you can do 3 things:
+
+git merge
+git rebase
+git cherry-pick  -- easy one -- pick the commits
+
+
+
+<img width="755" height="218" alt="image" src="https://github.com/user-attachments/assets/d8795705-56a0-4008-b387-eb23f22f2098" />
+
+git log division or doing
+
+git checkout division && git log  
+
+both are same
+
+so better user: git log division
+
+<img width="544" height="37" alt="image" src="https://github.com/user-attachments/assets/f66cbe22-a6e1-4f0a-aa21-8d3c903cd9c0" />
+
+<img width="793" height="517" alt="image" src="https://github.com/user-attachments/assets/f78bb477-16d0-4aa2-9fea-326e0b183cc2" />
+
+copying the add division commit comment log commit id
+<img width="1018" height="145" alt="image" src="https://github.com/user-attachments/assets/97d5963a-8706-43e1-bca1-5fa9fc69c705" />
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -185,7 +251,7 @@ the above means: create a branch from main branch
 
 
 
-github cli
+
 
 
 
