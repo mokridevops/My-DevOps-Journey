@@ -27,6 +27,49 @@ it will block the developer from commiting the code after the pre-commit stateme
 
 <img width="902" height="412" alt="image" src="https://github.com/user-attachments/assets/423a568b-662a-4f63-9690-52b2f49631a6" />
 
+<img width="581" height="173" alt="image" src="https://github.com/user-attachments/assets/3af848d2-9c3e-401b-bb7f-1127d975c892" />
+
+now for all three
+
+git log
+git log main
+git log division  
+
+we see the same three commits
+
+<img width="807" height="469" alt="image" src="https://github.com/user-attachments/assets/a6139341-528f-4e3a-a478-04e1f9a6fa38" />
+
+<img width="558" height="350" alt="image" src="https://github.com/user-attachments/assets/c3dc6146-6cf8-4c27-87ca-d55f395b6626" />
+
+
+if cherry-pick is this easy, why should i use git merge or git rebase?
+
+cherry pick is easy only when you have very few comments
+
+if you dont want to see lenghty logs always:
+
+<img width="687" height="145" alt="image" src="https://github.com/user-attachments/assets/e4b9cdfe-2207-4e3a-89eb-e9f6184fe7a0" />
+
+<img width="632" height="202" alt="image" src="https://github.com/user-attachments/assets/2d77728c-4493-4218-a1dc-c2ee8316dbd6" />
+
+<img width="784" height="197" alt="image" src="https://github.com/user-attachments/assets/62886c2b-c41e-404f-9796-9bbd16eeefd4" />
+
+
+
+if your commits should be in linear way - use rebase, if you are not bothered about the order of commits, you can use merge
+
+
+
+
+
+
+
+
+
+
+
+
+
 <img width="576" height="127" alt="image" src="https://github.com/user-attachments/assets/633d1750-1735-4961-a24f-50b24e56e3f5" />
 
 
