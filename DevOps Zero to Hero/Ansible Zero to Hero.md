@@ -235,6 +235,39 @@ Ansible playbook we write as .yml files
 
 
 
+Yml playbook
+
+--> starts with --- '3 hyphens' - indicating it is yml file
+
+then you start explaining about your playbook
+
+- name: Install and Start Nginx  ---> this hyphen indicates that it is a list of playbooks, we can write one playbook or multiple playbooks
+  hosts: all   ---> it executes on all servers on inventory
+  become: root ---> it will execute ansible playbook as root user
+
+  tasks:
+    - name: Install nginx
+      shell: apt install nginx
+      or
+      apt:
+         name: nginx
+         state: present
+
+    - name: Start nginx
+      service:
+         name: nginx
+         state: started
+         
+
+
+- name: my second playbook   
+
+
+
+
+<img width="622" height="520" alt="image" src="https://github.com/user-attachments/assets/7ea1d7f1-215c-4adc-98d4-05e9f456953c" />
+
+
 
 
 
