@@ -23,3 +23,16 @@ put the terraform files, except state files in GIT, and
 5) Standardize configurations - we maintain standards - for all the cloud providers
 
  
+
+
+# Terraform Lifecycle:
+
+1) Write: terraform configuration files
+
+   <img width="925" height="691" alt="image" src="https://github.com/user-attachments/assets/2fdc30a0-81a9-41f4-b407-9e07dbbe7d1b" />
+
+   <img width="1024" height="621" alt="image" src="https://github.com/user-attachments/assets/c0261555-7a16-463c-93c2-075e92ec9093" />
+
+   
+
+
