@@ -55,7 +55,55 @@ id_rsa.pub - public key
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGAAsKaJgdsqNu2xNHAFZr9utqpGrt+UI59PIrJeo3mRL0EV3awDrY+PyFjtWqffPrPfkmx9go+18uPdIO4kLlCUDiWUv+1QNUl07ipV6RKh3OXsPnlkmDkFlQTZKpNsgplx63p1nwVzk7atOnky4RalKZ3Dm9rh4cHu3mulO9b+AoXK26cLISSbIxDJsS7KzjRPuW/HOm5HX2OyusJSLUfMWmvO+Y5L3g44HWBdrzqzpUF2rFuYjd2KQdU5jZG+4S8TVJBsDpuWnGGzrl/LYoq0OaHHg7Lv3MHe52/Ytpv8JXGPOG7c45P46txhrrx8gN5Ko392NO76/Xjys6vvEIZ7wQK8h4DgvQUFOMdv73x0pNXXGfQtHFhao4zQ0oD1Q/EgvMprBfk9/cmqdTsKGNCLTrEzinh4l/7GyOlpxF9RZAwEwFMFp2HnQkNJK0iqauyXVP9URw4c+tONzp/orjM0mXRj1k2a3Qw16vGkXnAgzc1ta93Ovgy9h6fZ3yUBk= ubuntu@ip-172-31-82-122
 
 
-now login to second target machine
+now login to second target machine copy the public key of the ansible server above to the authorized keys of the target server
+
+
+
+so on the target server:
+
+
+do ssh-keygen here on target server as well
+
+
+<img width="1130" height="666" alt="image" src="https://github.com/user-attachments/assets/0c69e4f8-2e26-4b83-ab2d-7b3d4c1502af" />
+
+
+<img width="597" height="125" alt="image" src="https://github.com/user-attachments/assets/9e5bc70e-2bd0-4014-9f8d-b7684c77b97f" />
+
+
+<img width="884" height="212" alt="image" src="https://github.com/user-attachments/assets/edc80b23-5e8a-4ceb-a2dc-cd5eee277c6e" />
+
+<img width="1288" height="221" alt="image" src="https://github.com/user-attachments/assets/d49f4c02-500e-4d39-9b3b-377dfed29499" />
+
+now lets do ssh to target server from ansible server
+
+
+
+<img width="859" height="122" alt="image" src="https://github.com/user-attachments/assets/bad218af-44e6-4aed-ab90-eb41925f759e" />
+
+<img width="1122" height="689" alt="image" src="https://github.com/user-attachments/assets/1c843ffa-e2eb-4abc-aaf7-02e6a80a7f5e" />
+
+
+we were able to authenticate target server without any password
+
+this ithe prerequisite for anisble - we need to have password less authentication
+
+
+# How did we achieve the password less authentication:
+
+I just copied the public key of the Ansible server to the authorized keys of the target server
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
