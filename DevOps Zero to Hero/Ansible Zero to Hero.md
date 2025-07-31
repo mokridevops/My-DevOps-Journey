@@ -105,6 +105,161 @@ I just copied the public key of the Ansible server to the authorized keys of the
 
 
 
+Ansible playbooks are nothing but ansible files
+
+
+
+You dont have to write ansible playbooks all the time, you can as well run the ansible commands from the CLI.
+
+those are called - Ansible Adhoc Commands
+
+
+
+----------------------------------------
+
+to find size of shell files:
+
+<img width="679" height="44" alt="image" src="https://github.com/user-attachments/assets/d5ff707d-4db6-4722-8215-3f91eb410e73" />
+
+
+
+<img width="617" height="220" alt="image" src="https://github.com/user-attachments/assets/11aa4ec9-77ec-4917-a73f-456c061ebe10" />
+
+----------------------------------------
+
+Inventory files: file that stores IP Addresses of target server
+
+
+<img width="850" height="355" alt="image" src="https://github.com/user-attachments/assets/abaa8701-388f-4664-aafd-2d1c08db7f77" />
+
+if I have 10 servers, I will have to open the inventory file, and append the IP Addresses of the 10 servers
+
+two ways to give the ansible command:
+
+ansible -i inventory "ip address of target file"
+
+or
+
+ansible -i inventory all -m "shell" -a "touch devopsclass"
+
+-a - arguments
+-m - module
+
+
+<img width="716" height="35" alt="image" src="https://github.com/user-attachments/assets/bf29169c-8fc2-4e07-98fa-6282fb9cdd17" />
+
+now checking in the target server:
+
+<img width="608" height="111" alt="image" src="https://github.com/user-attachments/assets/8fec7399-377a-454b-ab7b-368b102f8024" />
+
+now, by giving all instead of single ip address
+
+<img width="740" height="120" alt="image" src="https://github.com/user-attachments/assets/5b55c476-62f7-45c5-92be-c565ff6544a1" />
+
+
+it will execute the above scirpt - touch devopsclass in all the target servers that are listed in the inventory file in the ansible server
+
+now checking in the target server:
+
+<img width="654" height="202" alt="image" src="https://github.com/user-attachments/assets/25b95dad-d121-43cc-b611-231e4865c852" />
+
+whenever we see the yellow color lines - it means it is successfully executed.
+
+If there are any errors, there will be red color lines
+
+
+we write a playbook, only when we want to execute set of these commands, just or executing one or two ansible adhoc commands we dont really need to write a playbook
+
+
+
+
+# Interview Question:
+
+what is the difference between Ansible Adhoc commands and Ansible Playbook:
+
+Ansible Adhoc Commands - for one or two tasks
+Ansible Playbook - for multiple commands
+
+
+Ansbile modules:
+
+<img width="1825" height="708" alt="image" src="https://github.com/user-attachments/assets/1871f057-5acb-4a71-8e5c-9d26ac06c82a" />
+
+<img width="1083" height="659" alt="image" src="https://github.com/user-attachments/assets/d60f8f9f-b328-47ea-a559-d118f3af82ad" />
+
+
+Let's check number of processes on the target server: by using nproc on the Ansible adhoc command:
+<img width="1149" height="137" alt="image" src="https://github.com/user-attachments/assets/8cd78938-e611-4429-9706-777b2d0fd9f8" />
+
+
+
+
+# Interview Question:
+
+Use case: run certain number of playbooks only on dbservers, and other number of playbooks only on webservers
+
+so do grouping in the inventory
+
+
+<img width="776" height="200" alt="image" src="https://github.com/user-attachments/assets/e0bc4bea-c37f-48f7-8493-39429119c4f4" />
+
+square brackets are very important
+
+<img width="257" height="196" alt="image" src="https://github.com/user-attachments/assets/a9cb0617-aa51-4888-9006-4d5773bbcb2b" />
+
+
+<img width="1152" height="71" alt="image" src="https://github.com/user-attachments/assets/0cbded2a-d089-48b9-b3e4-40b972c56a67" />
+
+Ansible will go to the inventory file, see what is the list of webservers and execute the ansible commands on the list of webservers
+
+
+
+
+
+
+# Interview  Question:  How do you group the servers in Ansible, or how do you execute certain number of tasks only on certain number of servers in ansible?
+
+In Ansible all the server names are configured in inventory files, you can do group of the servers in the inventory file, and tell ansible to execute this playbook or run these ansible commands only on certain number of servers
+
+
+-------------------
+
+# ANISBLE PLAYBOOK
+
+
+<img width="1024" height="127" alt="image" src="https://github.com/user-attachments/assets/6f21f150-9390-474e-b4c3-1c2821f68f23" />
+
+scenario : we will install Nginx and then start Nginx in the target servers using Ansible playbook,
+
+Ansible playbook we write as .yml files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
