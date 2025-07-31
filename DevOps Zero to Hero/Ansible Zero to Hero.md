@@ -268,6 +268,81 @@ then you start explaining about your playbook
 <img width="622" height="520" alt="image" src="https://github.com/user-attachments/assets/7ea1d7f1-215c-4adc-98d4-05e9f456953c" />
 
 
+<img width="1293" height="697" alt="image" src="https://github.com/user-attachments/assets/50aa1402-35ac-46e3-9547-4763ae24822f" />
+
+
+now go to the target server and check:
+
+sudo systemctl status nginx
+
+
+add the verbose -v ---> to get more details of what ansible is doing?
+
+-vvv ---> will give you more info
+
+
+<img width="1276" height="65" alt="image" src="https://github.com/user-attachments/assets/ade69710-3cfa-4a26-9327-a3cbe1d55e54" />
+
+
+<img width="1302" height="433" alt="image" src="https://github.com/user-attachments/assets/5d6abf73-7ea6-4125-a412-62d2450573d8" />
+
+
+writing ansible for kubernetes cluster:
+
+<img width="795" height="193" alt="image" src="https://github.com/user-attachments/assets/2d40f744-94d3-4c2f-9fee-8065f7682946" />
+
+
+<img width="896" height="234" alt="image" src="https://github.com/user-attachments/assets/60b6f212-f493-46fa-af12-024f9afebf04" />
+
+
+Now, this will become too big - as it will involve more than 50 tasks
+
+so, Ansible has comeup with something called as Ansible Roles
+
+
+
+Ansible Roles: is efficient way to write Ansible Playbooks, that will implrove efficiency to write complex playbooks
+
+Ex: Lets say If I want to configure kubernetes using Ansible, it will have close to 50 - 60 tasks, and you will have lot of variables, parameters, certificates, secrets that you have to configure while creating this kubernetes cluster, for that reason if you try to do it with roles you can segregate each and everything, and properly structure Ansible Playbooks
+
+ansible-galaxy role init kubernetes
+
+
+  <img width="1161" height="211" alt="image" src="https://github.com/user-attachments/assets/96274d72-490e-42ba-b16d-97d6ec730cf6" />
+
+
+<img width="1235" height="390" alt="image" src="https://github.com/user-attachments/assets/b926084f-c379-48c0-9659-7143aac78469" />
+
+
+<img width="1302" height="732" alt="image" src="https://github.com/user-attachments/assets/3b648da2-c2dc-4439-a971-76ed7f16c318" />
+
+using these files and folders, you can structure your playbooks
+
+
+
+meta - used to write some metadata information inside these files
+ex: details of this entire playbook, licensing information
+
+defaults: store some variables, etc - 
+vars folder
+group vars folder
+tests: unit tests
+handlers: handling some kind of exception, send some mail notification - when this nginx server is failing to start, etc
+tasks: 
+readme.md: tells the content of what is being stored in playbook
+files: certificates, etc - if you want to pass the index.html on to the tasks, so that it can be copied to other machine
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
