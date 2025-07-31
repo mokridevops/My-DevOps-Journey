@@ -98,9 +98,10 @@ I just copied the public key of the Ansible server to the authorized keys of the
 
 
 
+----
 
 
-
+### ANSIBLE PLAYBOOK:
 
 
 
