@@ -36,6 +36,9 @@ Note: We have used docker as agent in our jenkins project setup, and we found th
 
 we shall install docker on the same machine that has jenkins
 
+sudo apt update
+sudo apt install docker.io
+
 <img width="421" height="305" alt="image" src="https://github.com/user-attachments/assets/3c4eb9b9-54fb-41ce-9b1e-dab413a1253d" />
 
 
@@ -84,7 +87,9 @@ it is a good practice to restart your jenkins by doing this:
 now that jenkins has restarted, now install the docker pipeline plugin in jenkins
 
 why? 
-to run docker as agent
+to run docker as agent, jenkins should understand that whenever I am executing a job, I have to make sure that if the user provides in the jenkins file to run this specific job on the docker I need to have the configuration.
+
+ you will install the docker pipeline so that jenkins will execute your pipelines on Docker Agent if the required configuration is provided in the jenkins file.
 
 
 
@@ -104,8 +109,60 @@ ArgoCD is the modern day Continuous Deployment tool
 the above is the standard CICD process
 
 
+<img width="808" height="289" alt="image" src="https://github.com/user-attachments/assets/efe32140-cbe2-4358-9a58-469022c87182" />
 
 
+
+
+
+
+
+<img width="335" height="219" alt="image" src="https://github.com/user-attachments/assets/3088f077-4bc3-465e-acfa-234697e3283e" />
+
+
+
+docker run hello-world
+
+Hello from Docker!
+
+
+This message shows that your installation appears to be working correctly:
+
+1. Docker client contacted Docker Daemon
+2. Docker Daemon pulled the Hello-World Image from Docker Hub (amd64)
+3. Docker Daemon created a new container from that image which runs the executable that produces the output that you are currently reading.
+4. Docker Daemon streamed that output to the Docker client, which sent it to your terminal.
+
+   
+
+
+
+<img width="911" height="418" alt="image" src="https://github.com/user-attachments/assets/98393e6b-9345-4c0b-99aa-ccf9cd638bcf" />
+
+Freestyle project - you cannot share with peers
+
+Pipeline - you can write declarative or script, you can put it in git repository, and get peer review and verify if anything is wrong
+
+
+Always go with pipeline approach - groovy scripting
+
+
+<img width="685" height="375" alt="image" src="https://github.com/user-attachments/assets/d4291e30-9fa2-4cb6-acb2-cce27684502a" />
+
+
+Jenkins is all about - picking up the code from your local develoment or any version control system and delivering it to production or stagging envirnoment where automating all the stages that are invovled in between.  If there are 10 stages, your job is to use jenkins and automate 10 stages in between, so Jenkins acts as Orchestrator.
+
+<img width="790" height="496" alt="image" src="https://github.com/user-attachments/assets/30fbe6d2-a74c-422a-a4ac-af69963208b5" />
+
+<img width="1708" height="932" alt="image" src="https://github.com/user-attachments/assets/0399fd91-e9fd-44b5-a5aa-85d991b34f59" />
+
+<img width="686" height="342" alt="image" src="https://github.com/user-attachments/assets/22b1f164-2f3f-44f3-93b3-556ec3f9381f" />
+
+<img width="479" height="203" alt="image" src="https://github.com/user-attachments/assets/1b8f4794-7e03-4fc6-b4c2-5ce2ddbf4eeb" />
+
+after the execution of the pipeline script is done, Jenkins deleted the container
+
+<img width="479" height="203" alt="image" src="https://github.com/user-attachments/assets/d5a86827-2f19-4318-9cc6-8f35aa7f6d6b" />
 
 
 
