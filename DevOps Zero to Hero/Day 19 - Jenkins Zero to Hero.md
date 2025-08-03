@@ -169,10 +169,35 @@ after the execution of the pipeline script is done, Jenkins deleted the containe
 
 
 
+-----------------
+
+multistage multi agent
+
+
+3 tire application
+
+front end - Ubuntu - Java
+back end  - Ubuntu - Oracle
+database --  CentOS
+
+using worker nodes is very complicated, and not a right approach
+
+
+
+----
+<img width="774" height="331" alt="image" src="https://github.com/user-attachments/assets/23bb41ce-941a-431b-909b-2608e7fb2b77" />
+
+using ArgoCD for continuous delivery
 
 
 
 
+
+<img width="774" height="331" alt="image" src="https://github.com/user-attachments/assets/812a3c69-81af-4485-becc-ff0368b7394c" />
+
+ArgoCd - is actually pointing towards Git or Jenkins because.
+
+ArgoCd will be watching for any new versions available on Git, and then takes that version and deploys it on Kubernetes
 
 
 
