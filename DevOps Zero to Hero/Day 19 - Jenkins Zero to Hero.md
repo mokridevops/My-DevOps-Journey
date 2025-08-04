@@ -14,6 +14,7 @@ ubuntu@ip-172-31-89-41:~$
 
 
 
+
 <img width="944" height="465" alt="image" src="https://github.com/user-attachments/assets/b9bdbbfe-1c61-41ba-8c8c-af33b020e0c4" />
 
 Jenkins architecture:
