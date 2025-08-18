@@ -54,8 +54,11 @@ Docker Daemon - is heart of docker
 Podman - is a competitor for Docker
 
 docker build -> command from docker client (CLI) given to docker daemon -> to build Images
+
 docker run   -> command from docker client (CLI) given to docker daemon -> to create containers from Images
+
 docker pull  -> command from docker client (CLI) given to docker daemob -> to pull image from docker registery
+
 
 
 
