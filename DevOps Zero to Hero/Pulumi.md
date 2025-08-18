@@ -18,3 +18,40 @@ installing pulumi
 
 
 
+<img width="935" height="672" alt="image" src="https://github.com/user-attachments/assets/f730857b-0e43-4044-a409-776905a01529" />
+
+
+# Terraform vs Pulumi:
+
+<img width="766" height="371" alt="image" src="https://github.com/user-attachments/assets/95212d24-7fb5-4a68-9df7-d59782d5eb63" />
+
+Terraform Plan  ---> Pulumi Preview
+Terraform apply ---> Pulumi up
+Terraform workspace ---> Pulumi stacks
+Terraform modules ---> Pulumi Components
+
+
+
+<img width="1583" height="801" alt="image" src="https://github.com/user-attachments/assets/ba1ff2c0-9942-40c6-a2a0-8208ea95a261" />
+
+
+
+
+
+# Pros and Cons of Pulumi:
+
+1) Pulumi is suitable if you are good with programming
+2) relatively new, so not much resource
+
+Advantages:
+1) you can use - Visual studio code,
+2) you can use - chat assistance - something linke Github Copilot
+3) Pulumi extension
+4) AI code - vibe coding
+
+
+<img width="1891" height="993" alt="image" src="https://github.com/user-attachments/assets/11a56e4a-2886-456f-8da1-77705157136c" />
+
+
+
+
