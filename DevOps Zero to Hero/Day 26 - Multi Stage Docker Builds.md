@@ -12,3 +12,7 @@ For a beginner, this docker file is very good, but there is a problem with this 
 <img width="1182" height="757" alt="image" src="https://github.com/user-attachments/assets/2afd35fb-6dbb-4a65-83fb-b1c4c0c7bcd6" />
 
 
+
+# Multistage builds
+
+<img width="1097" height="682" alt="image" src="https://github.com/user-attachments/assets/8ee8d1cb-ff0c-4e58-9c15-7b833474e952" />
