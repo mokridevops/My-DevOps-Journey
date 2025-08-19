@@ -150,6 +150,24 @@ we have reduced the image size by 800 times.....
 
 
 
+to find distroless images:
+
+<img width="937" height="676" alt="image" src="https://github.com/user-attachments/assets/b8732240-9b07-4c78-8f06-7b338b388979" />
+
+
+<img width="1380" height="731" alt="image" src="https://github.com/user-attachments/assets/0508d95b-d83e-45ad-8e11-59b49178d11b" />
+
+
+<img width="1381" height="716" alt="image" src="https://github.com/user-attachments/assets/55eb2915-5ba7-4aba-822d-73dececaffba" />
+
+this is Java's distroless image folder:
+
+<img width="1327" height="682" alt="image" src="https://github.com/user-attachments/assets/2bb6c7b7-3fef-4d98-a04d-f939c8f666ad" />
+
+you can find the distroless images for OpenJDK 11 or OpenJDK 17
+
+
+
 
     
 
