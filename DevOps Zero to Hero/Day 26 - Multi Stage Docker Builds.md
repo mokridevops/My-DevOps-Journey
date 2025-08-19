@@ -129,6 +129,24 @@ Suppose, if we are using Golang based distroless images, then we are 99% of time
 
 
 
+----------------------------
+
+
+
+<img width="1362" height="703" alt="image" src="https://github.com/user-attachments/assets/63c09f48-155f-4022-84cf-e9091d3fd0f9" />
+
+<img width="1385" height="727" alt="image" src="https://github.com/user-attachments/assets/77a2a8df-2000-4248-b844-bd19f150568a" />
+
+<img width="927" height="780" alt="image" src="https://github.com/user-attachments/assets/9c0e80fd-8326-4d2c-9287-8461730b9efd" />
+
+Scratch - special distroless image called scratch - is minimalistic distroless image that we have today
+
+<img width="1430" height="376" alt="image" src="https://github.com/user-attachments/assets/e2c53fde-7ef8-40c1-9fde-02ae24a6c39e" />
+
+we have reduced the image size by 800 times.....
+
+
+
 
 
 
