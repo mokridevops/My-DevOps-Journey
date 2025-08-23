@@ -53,7 +53,16 @@ other ways the container will talk to host:
 
 when there are multiple containers, where C1 is talking to host using veth,and other container C2 is also talking to host using vithual , then it is very easy for the hacker to talk to all containers that are connected to the host through veth - > virtual ethernet
 
-<img width="834" height="622" alt="image" src="https://github.com/user-attachments/assets/14c0e05e-e135-412e-9928-f31b617050f8" />
+If there are 100 containers, all talk to each other via Veth -> which is OOTB (out of the box) nature - it is not seucred.
+
+
+<img width="1072" height="636" alt="image" src="https://github.com/user-attachments/assets/65352f27-ef5d-44af-b786-eb00ba8afb56" />
+
+this can be acheived by using bridge networking itself, by using host - we cannot acheive it, by using Overlay network - it is very complicated  (it is used for Kubernetes and Swarm)
+
+
+
+
 
 
 
