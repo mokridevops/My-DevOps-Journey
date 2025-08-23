@@ -23,12 +23,33 @@ Problem with container:
    1) Bind Mounts - allows to bind a directory inside a container, with a folder on the host:
   
       what ever is written on container - will be saved on host folder also
-   2) Volumes:  using docker CLI - create volumes, destroy, remove from container C1 and add it to container C2.
+
+      <img width="1382" height="850" alt="image" src="https://github.com/user-attachments/assets/a0869c54-ccb4-4b9e-9eda-9f4eb2655169" />
+
+   3) Volumes:  using docker CLI - create volumes, destroy, remove from container C1 and add it to container C2.
   
       Volumes has life cycle: create, destroy, use it etc
 
       Volumes are better - you can create on: host machine, EC2, S3, NFS -> take external backups
       Volumes are very high performance
+
+
+
+
+      Common misunderstanding of Docker Volumes:
+
+      docker -v
+      docker --mount
+
+      both are used for same thing
+
+      -v < src: dest : ..... > -> you will give all comments here itself
+      -- mount -> more verbose option
+      -- mount  src
+                dest
+                permission
+
+
 
       
       
