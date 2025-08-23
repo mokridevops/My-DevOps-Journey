@@ -146,11 +146,20 @@ docker inspect cc5f9480a9cd  ---> this is the name of the container
 
 
 
+RW = true ---> read write is true
 
 
 
 
+If the container is down, even then the volume abhishek is still available.
 
+and if you want to delete the volume, then you need to first stop the container and then delete the volume
+
+
+you cannot delete the volume, without stopping the container
+
+
+<img width="1656" height="161" alt="image" src="https://github.com/user-attachments/assets/aca7e8eb-1a0b-46ff-bf38-f527860b6878" />
 
 
 
