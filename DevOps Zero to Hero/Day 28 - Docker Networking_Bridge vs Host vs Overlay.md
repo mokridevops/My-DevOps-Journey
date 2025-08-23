@@ -12,3 +12,10 @@ Networking allows containers to communicate with each other and the host systems
 <img width="1129" height="681" alt="image" src="https://github.com/user-attachments/assets/c1f0a336-a9a1-4993-b6b0-827c211a6a4f" />
 
 
+Container communications:
+
+1) communicate with each other
+2) Isolation between two containers, where one container might be payments container where that container must be higly secured.
+
+Container networking offer both of these solutions:
+
