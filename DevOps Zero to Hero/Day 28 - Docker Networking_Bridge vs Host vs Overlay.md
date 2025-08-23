@@ -18,4 +18,11 @@ Container communications:
 2) Isolation between two containers, where one container might be payments container where that container must be higly secured.
 
 Container networking offer both of these solutions:
+ 
+
+
+<img width="1127" height="681" alt="image" src="https://github.com/user-attachments/assets/7f7f47a6-23bb-4a61-bf64-9d8bcdc2cd5a" />
+
+
+When a container is created, in a host operating system, there is by default a veth (virtual eth) or docker0 network bridge is created between the host operating system and the container.  without this network brigde the communication with the container is lost
 
