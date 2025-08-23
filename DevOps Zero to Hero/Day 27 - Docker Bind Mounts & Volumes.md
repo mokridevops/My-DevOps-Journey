@@ -125,6 +125,36 @@ docker run -d --mount
 it is not only running a container, but it is running container with a mount
 
 
+<img width="1161" height="129" alt="image" src="https://github.com/user-attachments/assets/8ebe2cfc-bced-4605-ae82-93f87ceed8cd" />
+
+<img width="1761" height="735" alt="image" src="https://github.com/user-attachments/assets/c3744e68-34ac-4c3c-bef7-938238edc0b1" />
+
+<img width="1783" height="422" alt="image" src="https://github.com/user-attachments/assets/6643a71d-a542-4c86-81a9-64b48e78b5da" />
+
+docker ps ---> will give the list of running containers.
+
+
+docker inspect cc5f9480a9cd  ---> this is the name of the container
+
+<img width="1540" height="596" alt="image" src="https://github.com/user-attachments/assets/d4b388a9-a0e2-43df-a46c-f5f1ff4cd46b" />
+
+<img width="817" height="906" alt="image" src="https://github.com/user-attachments/assets/dfde4f38-d5cb-46eb-8211-6cb57b996414" />
+
+<img width="1659" height="931" alt="image" src="https://github.com/user-attachments/assets/20ae360e-3129-4d88-bbe3-ae3ee37ccd8f" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
