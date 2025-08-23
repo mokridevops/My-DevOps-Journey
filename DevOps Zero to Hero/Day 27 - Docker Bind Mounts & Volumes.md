@@ -50,8 +50,109 @@ Problem with container:
                 permission
 
 
+Always go with volumnes instead of Bind mounts : you can manage entire life cycle of volumes, put in the external storage on S3 buckets, etc 
 
       
+      Commands:
+
+      docker volume ls ---> lists the volumes already created
+
+      docker volume create abhishek ---> creates a volume
+
+      <img width="653" height="178" alt="image" src="https://github.com/user-attachments/assets/7f334261-f395-4870-9562-a79033d95099" />
+
+      this volume is created on local file system
+
+
+      -----
+
+      when you want to know who created a volume and where?
+
+      docker volume inspect abhishek
+
+
+<img width="720" height="397" alt="image" src="https://github.com/user-attachments/assets/71e6d47f-ca05-4792-bb51-a7bd4d1aabb5" />
+
+
+
+---
+to delete a volume:
+
+
+
+<img width="633" height="187" alt="image" src="https://github.com/user-attachments/assets/3aff8913-75a7-46a8-90ad-0aff78d7794d" />
+
+
+you can delete multiple volumes by giving multiple volumes in the same docker command
+
+<img width="1163" height="560" alt="image" src="https://github.com/user-attachments/assets/1996e692-04a1-4722-aae8-59eaeb39ca2a" />
+
+
+-----
+
+to search for top 5 docker images:
+
+docker images | head -5
+
+<img width="1127" height="493" alt="image" src="https://github.com/user-attachments/assets/c5076c0a-bef2-4d1d-b988-9a4dd80564b8" />
+
+
+
+---
+
+running a docker build
+
+docker build -t volumedemo .
+
+so the image called volumedemo is being built
+
+<img width="869" height="27" alt="image" src="https://github.com/user-attachments/assets/ad9dd955-855d-4abd-96e3-3b930e779b1c" />
+
+after doing docker build, it will create docker image:
+
+<img width="912" height="383" alt="image" src="https://github.com/user-attachments/assets/d20339f5-0f28-4bbf-8c15-def35493e33f" />
+
+now create a docker volume
+
+and then we will attach the docker volume to the docker container
+
+now, let run the image to start the container with option mount
+
+docker run -d --mount
+
+<img width="1756" height="767" alt="image" src="https://github.com/user-attachments/assets/ed14d1bd-534c-4e17-8735-5707304d62f9" />
+
+it is not only running a container, but it is running container with a mount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      
+
+
       
 
   
