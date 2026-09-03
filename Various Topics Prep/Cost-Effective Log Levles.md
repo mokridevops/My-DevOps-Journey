@@ -1,3 +1,6 @@
+<h1> out of all the log levels used, which log verbose are the ones which are cost effective?</h1>
+
+
 
 Absolutely — let’s map **log levels → cost efficiency → DevOps tooling** in a way that’s actually useful for you as someone working in QA, DevOps, and cloud engineering.
 
