@@ -1,4 +1,4 @@
-<h1> out of all the log levels used, which log verbose are the ones which are cost effective?</h1>
+<h1> Out of all the log levels used, which log verbose are the ones which are cost effective?</h1>
 
 
 
