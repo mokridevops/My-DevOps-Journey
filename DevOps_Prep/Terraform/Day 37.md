@@ -222,7 +222,20 @@ Now since the bastion is done, lets look at creating Databases:
 now, the instance for MongoDB will be created, how do we configure MongoDB?
 two ways:
 1) User Data
-2) Provisiners
+2) Provisioners
+
+We can also do this by - going to that instance, and installing ansible, and run the ansible playbooks -> roboshop.yaml -> to configure MongoDB.
+
+
+
+so, apart from creating database, we need Route53 record too: like this: #mongodb-dev.daws90s.shop
+
+
+<img width="1170" height="654" alt="image" src="https://github.com/user-attachments/assets/1bb60f20-2388-48b8-93c3-e2d923103272" />
+
+<img width="874" height="643" alt="image" src="https://github.com/user-attachments/assets/f2eddca7-f64e-4cec-ba04-b8048ff6c218" />
+
+
 
 
 
