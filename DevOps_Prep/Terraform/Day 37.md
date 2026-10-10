@@ -109,31 +109,11 @@ Question:
 <img width="958" height="305" alt="image" src="https://github.com/user-attachments/assets/2fd242d5-2b7e-409a-a71a-03e675a69461" />
 
 what is the meaning of terraform = true in the above code:
-In your Terraform code, the line
 
-hcl
-Terraform = "true"
-inside the common_tags block is simply defining a resource tag — a key-value pair that will be attached to your AWS resources.
+<img width="808" height="657" alt="image" src="https://github.com/user-attachments/assets/fad8cb5a-60c0-4c11-a660-68443baa037d" />
 
-Here’s what it means:
 
-Key: Terraform
-
-Value: "true"
-
-This tag acts as a marker indicating that the resource was created or managed by Terraform.
-It doesn’t affect Terraform’s behavior directly — it’s purely metadata stored in AWS.
-
-💡 Why it’s useful
-Helps you identify which resources were provisioned by Terraform versus manually created ones.
-
-Makes it easier to filter or audit resources in the AWS console using tags.
-
-Can be used in automation scripts or cost tracking to group Terraform-managed infrastructure.
-
-So, it’s a best practice for clarity and governance — not a functional command.
-
-***************************************
+*******************************************
 
 
 
