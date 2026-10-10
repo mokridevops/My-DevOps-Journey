@@ -235,6 +235,15 @@ so, apart from creating database, we need Route53 record too: like this: #mongod
 
 <img width="874" height="643" alt="image" src="https://github.com/user-attachments/assets/f2eddca7-f64e-4cec-ba04-b8048ff6c218" />
 
+now let's do > 40-databases > terraform apply -auto-approve
+
+the route53 record is now created:
+
+<img width="1737" height="830" alt="image" src="https://github.com/user-attachments/assets/2cfcfe6b-fe6c-41ad-9d6b-162afcc6ce6e" />
+
+
+
+
 
 
 
