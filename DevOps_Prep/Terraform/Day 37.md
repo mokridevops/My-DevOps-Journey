@@ -60,6 +60,23 @@ Bastion host - setup
 
 check session - 36
 
+While setting up EC2 instance for Bastion - AWS give us 20GB by default, which is not enough, lets increase it to 50 GB
+
+
+<img width="982" height="856" alt="image" src="https://github.com/user-attachments/assets/75a561e9-a8af-4ef5-9e71-d0d895250ff8" />
+
+<img width="1110" height="734" alt="image" src="https://github.com/user-attachments/assets/ba4a9db2-aa6d-4980-97b4-2a7fdd75e1f0" />
+
+this root volume that we are attaching to Bastion host (EC2 Instance) will automatically be destroy when terminating the EC2 instance.
+
+<img width="1414" height="666" alt="image" src="https://github.com/user-attachments/assets/64af77f2-7e82-4cd7-8287-e5969b9b30aa" />
+
+so, here usage is only 20GB, remaining 30 GB - we have to manually mount it
+
+
+
+
+
 
 
 
