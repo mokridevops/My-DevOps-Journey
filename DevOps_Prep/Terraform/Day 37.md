@@ -30,6 +30,43 @@ so, in our project of Roboshop -> we give bastion host the permissions to config
    EC2, S3, Cloudfront, LoadBalancer, etc.... -> resources
    Create EC2, Update EC2, Read EC2, Delete EC2 -> Actions on resources
 
+   <img width="1901" height="838" alt="image" src="https://github.com/user-attachments/assets/29ccde60-92b3-4f50-87f1-96f9bdc0c831" />
+
+   
+<img width="912" height="706" alt="image" src="https://github.com/user-attachments/assets/68ffee27-7752-405f-b3e9-ebe008ef682c" />
+
+<img width="1587" height="521" alt="image" src="https://github.com/user-attachments/assets/8666e0d1-b565-4bef-921f-b617d4345db1" />
+
+<img width="1533" height="824" alt="image" src="https://github.com/user-attachments/assets/ba7c8c36-1c68-4c24-9f22-04bb4276ed04" />
+<img width="1853" height="848" alt="image" src="https://github.com/user-attachments/assets/8cab36d9-ef1e-4157-96b1-2592c7d27f3d" />
+<img width="842" height="294" alt="image" src="https://github.com/user-attachments/assets/abb0f466-acc2-4a91-8370-05fd0c68adb8" />
+
+
+
+## to create all the services at once in terraform command:
+
+> for i in 00-vpc/ 10-sg/ 20-sg-rules/ 30-bastion; do cd $i; terraform apply -auto-approve; cd ..; done
+
+
+<img width="1375" height="889" alt="image" src="https://github.com/user-attachments/assets/09a93943-437f-4fd3-853f-8aee82dcf085" />
+
+<img width="1327" height="202" alt="image" src="https://github.com/user-attachments/assets/ef46c30b-dc1f-4bc2-8a74-0e19a4f6bb32" />
+
+
+
+----------------------------------------------
+
+Bastion host - setup
+
+check session - 36
+
+
+
+
+
+
+
+
   
 
    
