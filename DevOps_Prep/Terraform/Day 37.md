@@ -52,7 +52,7 @@ so, in our project of Roboshop -> we give bastion host the permissions to config
 
 <img width="1327" height="202" alt="image" src="https://github.com/user-attachments/assets/ef46c30b-dc1f-4bc2-8a74-0e19a4f6bb32" />
 
-
+lets continue after bastion and Route53 records creation from Session - 36:
 
 ----------------------------------------------
 
@@ -240,6 +240,17 @@ now let's do > 40-databases > terraform apply -auto-approve
 the route53 record is now created:
 
 <img width="1737" height="830" alt="image" src="https://github.com/user-attachments/assets/2cfcfe6b-fe6c-41ad-9d6b-162afcc6ce6e" />
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Let's get back to Session 37-after creation of Bastion host and Route53 records for database:
+
+<img width="1559" height="530" alt="image" src="https://github.com/user-attachments/assets/5b036bcf-2a75-45fe-82e2-4c05a24a05ae" />
+
+the role - Roboshop-dev-bastion is created, and you can assign it to EC2 instances only.
+
+so, once I create Bastion host, and attach this role, now I can have access.
 
 
 
