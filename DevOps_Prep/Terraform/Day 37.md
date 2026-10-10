@@ -177,6 +177,19 @@ lvextend -r -L +30G /dev/mapper/RootVG-rootVol
 xfs_growfs /
 df -hT
 
+The above steps are being done manually, how about doing these steps when the system starts?
+-> User Data
+
+lets create - a terraform template file -> bastion.sh.tftpl
+
+tftpl -> template file
+
+<img width="1078" height="647" alt="image" src="https://github.com/user-attachments/assets/a3882f80-32fd-445c-9450-fefd4e063dd6" />
+
+since we wanted to do it for homevol rather than root val, since we use the user - EC2-user rather than root user, we would target to use - homeVal
+
+<img width="1129" height="434" alt="image" src="https://github.com/user-attachments/assets/31199b97-a16b-412c-a139-ed15ef368bf6" />
+
 
 
 
