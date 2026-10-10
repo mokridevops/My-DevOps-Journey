@@ -11,6 +11,8 @@ two ways:
 1) aws configure
 2) IAM roles
 
+so, in our project of Roboshop -> we give bastion host the permissions to configure the MondoDB database that is in Database subnet, where we don't have access to do any configurations.
+
    IAM - Identity and Access Management
 
    User -> console access through username and password, keys for programmatic access
@@ -26,6 +28,8 @@ two ways:
 
    EC2, S3, Cloudfront, LoadBalancer, etc.... -> resources
    Create EC2, Update EC2, Read EC2, Delete EC2 -> Actions on resources
+
+  
 
    
 
