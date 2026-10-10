@@ -156,6 +156,30 @@ so disk is under devices
 
 
 
+now, I want to add 30GB volume in partition 4 to RootVG-rootVol which has 6GB currently:
+
+
+
+<img width="514" height="240" alt="image" src="https://github.com/user-attachments/assets/3556c28c-dfe6-4a50-8522-5f587007c0e3" />
+
+lvextend -r -L +30G /dev/mapper/RootVG-rootVol
+
+<img width="878" height="570" alt="image" src="https://github.com/user-attachments/assets/7220ade4-6384-447d-836d-3a2cc2d3a0a1" />
+
+<img width="676" height="194" alt="image" src="https://github.com/user-attachments/assets/2499da85-ff67-4f48-b9e5-ea06d26ef289" />
+
+<img width="684" height="177" alt="image" src="https://github.com/user-attachments/assets/5aecf3e0-3073-43ba-9261-f99dff774f99" />
+
+
+lsblk
+growpart /dev/nvme0n1 4
+lvextend -r -L +30G /dev/mapper/RootVG-rootVol
+xfs_growfs /
+df -hT
+
+
+
+
 
 
 
