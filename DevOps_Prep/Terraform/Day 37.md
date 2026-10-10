@@ -116,6 +116,48 @@ what is the meaning of terraform = true in the above code:
 *******************************************
 
 
+for bastion - we created 50 GB root volume:
+
+lets login to the bastion host, since it got created after doing the following:
+
+> c/devops/daws-90s/repos/roboshop-dev-infra/30-bastion > terraform apply -auto-approve
+> 
+
+
+<img width="744" height="892" alt="image" src="https://github.com/user-attachments/assets/c3f0a06b-ae31-4698-acf1-4c6f63bafc36" />
+
+by checking df -hT and sudo lsblk, we see that the volume is created for 50G, but we are using only 20GB
+
+we need to extend partition 4:
+
+<img width="764" height="517" alt="image" src="https://github.com/user-attachments/assets/1885f37c-8e19-4494-be8b-fa9460d938ad" />
+
+<img width="1079" height="534" alt="image" src="https://github.com/user-attachments/assets/f0234883-706d-4e13-baca-73695690bbfd" />
+
+sudo growpart /dev/nvme0n1 1
+
+we need to increase the partition 4 in -> sudo lsblk
+
+<img width="812" height="402" alt="image" src="https://github.com/user-attachments/assets/3eba3ea3-1eed-428a-b0cc-0b28a9d49412" />
+
+
+dev - devices
+
+nvme0n1 - is disk
+
+so disk is under devices
+
+
+<img width="845" height="100" alt="image" src="https://github.com/user-attachments/assets/1477e299-96e8-4a93-a126-fcb294541d21" />
+
+
+<img width="719" height="301" alt="image" src="https://github.com/user-attachments/assets/a409906e-59b9-4391-8eb8-49cc149a346a" />
+
+
+
+
+
+
 
 
 
