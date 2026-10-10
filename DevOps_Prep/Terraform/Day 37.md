@@ -252,6 +252,18 @@ the role - Roboshop-dev-bastion is created, and you can assign it to EC2 instanc
 
 so, once I create Bastion host, and attach this role, now I can have access.
 
+here, we have to install terraform too - where ? in userdata.tf file of Bastion host - i.e. bastion.sh.tftpl
+
+<img width="1457" height="830" alt="image" src="https://github.com/user-attachments/assets/dacd1b6f-57bc-4969-998f-4d6650904d6c" />
+
+<img width="1312" height="536" alt="image" src="https://github.com/user-attachments/assets/4be7defb-2b6c-46b7-8608-5df29a795a0b" />
+
+
+after running this terraform will also get installed
+
+
+***Important***
+So, we don't have to go to Bastion host and run aws configure, since to Bastion host, we assigned a role -> that role has  ->  AdministratorAccess permission, it automatically sets up - aws keys by default!
 
 
 
