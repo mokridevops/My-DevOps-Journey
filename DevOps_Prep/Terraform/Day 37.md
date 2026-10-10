@@ -190,6 +190,13 @@ since we wanted to do it for homevol rather than root val, since we use the user
 
 <img width="1129" height="434" alt="image" src="https://github.com/user-attachments/assets/31199b97-a16b-412c-a139-ed15ef368bf6" />
 
+<img width="1752" height="827" alt="image" src="https://github.com/user-attachments/assets/a0ece2e1-9986-4bd6-bd99-8f5537b9322c" />
+
+
+
+lets destroy the resources created for bastion in 30-bastion folder, and reapply, so that these user data changes will take place while creating the instance.
+
+Note: User Data will always apply during creation of the instance.
 
 
 
