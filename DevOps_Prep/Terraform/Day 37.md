@@ -73,6 +73,26 @@ this root volume that we are attaching to Bastion host (EC2 Instance) will autom
 
 so, here usage is only 20GB, remaining 30 GB - we have to manually mount it
 
+in 20-sg-rules:
+for this to work:
+<img width="1688" height="630" alt="image" src="https://github.com/user-attachments/assets/5babb921-575e-4745-a9d3-e61e5108b153" />
+
+we need in data.tf the following:
+<img width="1075" height="622" alt="image" src="https://github.com/user-attachments/assets/edf6a1de-5e31-4bb6-8cd6-2e777dc673e8" />
+
+I missed ipv4 - then in terraform plan - got the following error:
+
+<img width="1646" height="195" alt="image" src="https://github.com/user-attachments/assets/88cce853-e66c-4959-a333-41d21484c7fe" />
+
+now, it is fixed in 20-sg-rules/
+
+coming back to bastion:
+
+
+
+
+
+
 
 
 
