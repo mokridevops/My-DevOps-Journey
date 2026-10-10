@@ -20,7 +20,8 @@ so, in our project of Roboshop -> we give bastion host the permissions to config
    Role -> non human users. Services in aws, users in other accounts and third party users called federated users can assume role.
    We can create role for EC2 service to provide access for creating other AWS services
    Permissions -> what resources and actions
-   Policy -> a list of permissions
+   Policy -> a list of permissions is called policy
+   Policy can be attached to a User, group or Role
 
 
    Non -> resource
