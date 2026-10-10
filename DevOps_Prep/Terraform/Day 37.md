@@ -198,6 +198,36 @@ lets destroy the resources created for bastion in 30-bastion folder, and reapply
 
 Note: User Data will always apply during creation of the instance.
 
+After doing the > 30-bastion> terraform apply -auto-approve
+
+<img width="1687" height="790" alt="image" src="https://github.com/user-attachments/assets/63da097a-60f1-4081-85bd-8eb1ad2b87da" />
+
+bastion host got created, lets check the config of the disk in the bastion by doing SSH to bastion:
+
+<img width="1520" height="922" alt="image" src="https://github.com/user-attachments/assets/c1d0dbcf-b64a-4bd8-b7df-51285adfc04d" />
+
+
+-------------------------------------------
+
+Now since the bastion is done, lets look at creating Databases:
+
+
+<img width="1777" height="872" alt="image" src="https://github.com/user-attachments/assets/8d16b543-885f-4b14-a1b5-390d7ad08bd6" />
+
+<img width="1149" height="735" alt="image" src="https://github.com/user-attachments/assets/a71213e6-b983-4fae-b216-482b3d50d657" />
+
+<img width="1570" height="616" alt="image" src="https://github.com/user-attachments/assets/ec48613c-e085-4ac1-9704-cf93ce7cc6b8" />
+
+
+now, the instance for MongoDB will be created, how do we configure MongoDB?
+two ways:
+1) User Data
+2) Provisiners
+
+
+
+
+
 
 
 
