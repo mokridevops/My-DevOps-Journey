@@ -86,7 +86,24 @@ I missed ipv4 - then in terraform plan - got the following error:
 
 now, it is fixed in 20-sg-rules/
 
+<img width="1190" height="644" alt="image" src="https://github.com/user-attachments/assets/413fcfdf-ddb9-4297-a6b1-557fa6b3807d" />
+
+<img width="944" height="948" alt="image" src="https://github.com/user-attachments/assets/4618821b-a812-4e1c-9982-f63cdfe4a4e8" />
+
+
+
 coming back to bastion:
+
+Now we have VPC's, security groups, and security group rules, now we can create databases, however to connect to databases, we need bastion - so we setup bastion:
+
+<img width="341" height="877" alt="image" src="https://github.com/user-attachments/assets/3c1d2970-6a71-4780-b189-8fd64167f42d" />
+
+00-vpcs
+10-sgs
+20-sg-rules
+30-bastion
+40-databases
+
 
 
 
