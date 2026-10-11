@@ -299,8 +299,30 @@ able to do > aws s3 ls
 
 that means aws is getting access throug bastions host, that we we got connected to AWS.
 
+<img width="1546" height="988" alt="image" src="https://github.com/user-attachments/assets/f5c07324-5de3-4ca3-a60f-07fdd7370ddc" />
 
 
+
+
+adding a policy attachment:
+
+
+<img width="1718" height="861" alt="image" src="https://github.com/user-attachments/assets/0a0f6d4f-b114-4d18-bf75-e60a095a1d2c" />
+
+<img width="1658" height="886" alt="image" src="https://github.com/user-attachments/assets/bfb7230e-be50-41d6-b91a-63a100ed4844" />
+
+<img width="1874" height="896" alt="image" src="https://github.com/user-attachments/assets/27630aca-69f3-453f-85c2-efdabcc91d24" />
+
+
+<img width="1326" height="816" alt="image" src="https://github.com/user-attachments/assets/0d2c3068-a15b-4976-b1e3-d173ba167953" />
+
+
+<img width="1437" height="771" alt="image" src="https://github.com/user-attachments/assets/9e28e016-3d7e-4591-9c44-e22051d84195" />
+
+
+detaching the manually added IAM access role:
+
+<img width="1770" height="887" alt="image" src="https://github.com/user-attachments/assets/31a5611f-1c39-49e2-ab2e-547855689b63" />
 
 
 
