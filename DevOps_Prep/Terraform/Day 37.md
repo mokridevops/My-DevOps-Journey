@@ -361,6 +361,28 @@ after terraform apply -auto-approve, I am able to access aws:
 <img width="1040" height="884" alt="image" src="https://github.com/user-attachments/assets/311cf425-8852-4206-b484-0c8fe4829a2d" />
 
 
+We use something called as Terraform_data, as Provisioners - also we need to write in the instance, so it will be used during the time of instance creation:
+
+<img width="1232" height="862" alt="image" src="https://github.com/user-attachments/assets/f98c339f-5c0b-40d1-a57a-2677c363035b" />
+this is the code for remote-exec provisioner
+
+
+lets us see Terraform data
+
+
+Terraform_data
+===============
+Earlier called as null resource, actually will not create any resources but used for terraform life cycle.  Lifecycle means - Create, update, read, delete
+
+We can have triggers to control when to run.  terraform_data used for provisioners and file copy, etc..
+
+
+Through terraform_data, we can write the provisioners outside of the instance, instead of inside instance.  If we write inside the instance, we can write it only during creation and deletion.
+
+
+<img width="1235" height="879" alt="image" src="https://github.com/user-attachments/assets/1acf7d5f-88a1-44b3-8617-d9418593a07e" />
+
+
 
 
 
