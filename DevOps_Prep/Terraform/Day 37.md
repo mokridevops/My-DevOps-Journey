@@ -4,9 +4,10 @@
 Configuring database instance:
  - two ways:
  1) user_data -> only runs at the run time of creation.  Disadvantage of User data: If we there are any changes in the script(configuration) - we have to destroy the existing terraform configuration, and then create again, for the changes to take place.
- 2) provisioners -> requries ssh connection from where terraform is running
+ 2) provisioners -> Provisioners can be used - to avoid destroying the configuration, and running the script, however there is one disadvantage: requries ssh connection from where terraform is running.
 
-Connect to bastion host -> run the terraform commands there, so now bastion host creates ec2, r53, etc..
+We will take provisioners approach, then 
+Connect to bastion host -> run the terraform commands there, i.e. terraform should be installed here, so now bastion host creates ec2, r53, etc..
 two ways:
 1) aws configure
 2) IAM roles
@@ -273,6 +274,36 @@ now you can add the IAM role to the roboshop-dev-bastion
 <img width="1889" height="628" alt="image" src="https://github.com/user-attachments/assets/5618732b-7358-434e-9d28-b793502fa594" />
 
 <img width="935" height="302" alt="image" src="https://github.com/user-attachments/assets/d4d0a4c3-9c49-4455-bcf3-6de8cf4d06ec" />
+
+after attaching the role - 
+
+
+<img width="903" height="181" alt="image" src="https://github.com/user-attachments/assets/9b0dd504-cf53-42b3-ba06-d24333d3ec11" />
+
+now login to the Bastion host -(EC2 instance):
+
+
+<img width="533" height="416" alt="image" src="https://github.com/user-attachments/assets/23952f8f-4453-44e6-86f6-8762758b5586" />
+
+# command to see the user logs: (very important)
+
+> less /var/log/cloud-init-ouput.log
+
+
+<img width="574" height="458" alt="image" src="https://github.com/user-attachments/assets/c48e499d-07d3-457e-a496-82f4e9121122" />
+
+
+<img width="664" height="493" alt="image" src="https://github.com/user-attachments/assets/cd0848c0-1319-49e2-beab-c904829345ab" />
+
+able to do > aws s3 ls
+
+that means aws is getting access throug bastions host, that we we got connected to AWS.
+
+
+
+
+
+
 
 
 
