@@ -3,7 +3,7 @@
 
 Configuring database instance:
  - two ways:
- 1) user_data -> only runs at the run time of creation
+ 1) user_data -> only runs at the run time of creation.  Disadvantage of User data: If we there are any changes in the script(configuration) - we have to destroy the existing terraform configuration, and then create again, for the changes to take place.
  2) provisioners -> requries ssh connection from where terraform is running
 
 Connect to bastion host -> run the terraform commands there, so now bastion host creates ec2, r53, etc..
