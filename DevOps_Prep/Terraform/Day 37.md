@@ -352,6 +352,14 @@ I have to force unlock the state file : terraform force-unlock <lock-id>
 <img width="1111" height="364" alt="image" src="https://github.com/user-attachments/assets/9d6ea737-a072-46a1-b463-e5a035796dad" />
 
 
+after terraform apply -auto-approve, I am able to access aws:
+
+
+
+<img width="1629" height="1116" alt="image" src="https://github.com/user-attachments/assets/781ad29f-66ba-4e98-b755-d96fd5c4a36c" />
+
+<img width="1040" height="884" alt="image" src="https://github.com/user-attachments/assets/311cf425-8852-4206-b484-0c8fe4829a2d" />
+
 
 
 
