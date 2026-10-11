@@ -266,6 +266,16 @@ after running this terraform will also get installed
 So, we don't have to go to Bastion host and run aws configure, since to Bastion host, we assigned a role -> that role has  ->  AdministratorAccess permission, it automatically sets up - aws keys by default!
 
 
+<img width="1900" height="749" alt="image" src="https://github.com/user-attachments/assets/6101779a-1f09-4518-9c87-44535f0afbd6" />
+
+
+now you can add the IAM role to the roboshop-dev-bastion
+<img width="1889" height="628" alt="image" src="https://github.com/user-attachments/assets/5618732b-7358-434e-9d28-b793502fa594" />
+
+<img width="935" height="302" alt="image" src="https://github.com/user-attachments/assets/d4d0a4c3-9c49-4455-bcf3-6de8cf4d06ec" />
+
+
+
 
 
 
