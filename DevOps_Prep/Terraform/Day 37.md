@@ -322,7 +322,35 @@ adding a policy attachment:
 
 detaching the manually added IAM access role:
 
+
+
 <img width="1770" height="887" alt="image" src="https://github.com/user-attachments/assets/31a5611f-1c39-49e2-ab2e-547855689b63" />
+
+lets detach the role that was added manually, and then run the terraform code to do it attach it automatically.
+
+
+<img width="773" height="254" alt="image" src="https://github.com/user-attachments/assets/dcd34b57-dcd3-458c-8ad9-3e373eeb8d8d" />
+
+
+Deleting the role too from front end:
+
+
+
+<img width="1417" height="777" alt="image" src="https://github.com/user-attachments/assets/7be7f915-90f6-40a3-a4af-1a219c760875" />
+
+
+
+while doing terraform apply, i mistakenly interrupted by pressing- ctrl+C,
+
+<img width="1889" height="461" alt="image" src="https://github.com/user-attachments/assets/7ba21e66-f3b4-49e9-8e52-a76b2b3b2325" />
+
+I got this Error:
+
+I have to force unlock the state file : terraform force-unlock <lock-id>
+
+
+<img width="1111" height="364" alt="image" src="https://github.com/user-attachments/assets/9d6ea737-a072-46a1-b463-e5a035796dad" />
+
 
 
 
