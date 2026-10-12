@@ -514,6 +514,7 @@ shellscript took it, and gave it to ansible:
 
 Mongodb is installed now.
 
+<img width="1769" height="1005" alt="image" src="https://github.com/user-attachments/assets/3a3a23bf-2dea-4d14-8b2d-1ae51849b8ff" />
 
 
 
