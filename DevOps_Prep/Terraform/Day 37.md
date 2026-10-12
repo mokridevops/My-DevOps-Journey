@@ -377,10 +377,20 @@ Earlier called as null resource, actually will not create any resources but used
 We can have triggers to control when to run.  terraform_data used for provisioners and file copy, etc..
 
 
-Through terraform_data, we can write the provisioners outside of the instance, instead of inside instance.  If we write inside the instance, we can write it only during creation and deletion.
+Through terraform_data, we can write the provisioners outside of the instance, instead of inside instance.  If we write inside the instance, it will get triggered only during creation and deletion.
 
 
 <img width="1235" height="879" alt="image" src="https://github.com/user-attachments/assets/1acf7d5f-88a1-44b3-8617-d9418593a07e" />
+
+ansible controller -> node -> push
+
+we can install ansible in any node, we can pull the repos and self configure
+
+mongodb:
+========
+install ansible
+pull git ansible repos
+run playbooks against localhost
 
 
 
