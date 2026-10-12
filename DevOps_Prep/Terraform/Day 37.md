@@ -394,14 +394,100 @@ run playbooks against localhost
 
 
 
+Now, we login to bastion host, using MobaXterm
+
+<img width="945" height="378" alt="image" src="https://github.com/user-attachments/assets/9de77ba3-c41c-406e-baff-913810ece6b5" />
+<img width="1839" height="519" alt="image" src="https://github.com/user-attachments/assets/28ecce38-13f2-4544-86e9-9ec34ab647c0" />
+
+
+<img width="851" height="526" alt="image" src="https://github.com/user-attachments/assets/202fbee9-a0a5-4f73-82b7-16d595684740" />
+
+
+
+
+we clone the repo:
+
+
+<img width="1330" height="910" alt="image" src="https://github.com/user-attachments/assets/e0d624c4-1490-4b8f-997e-4b05204a990d" />
+
+here the disk size - has not increased - need to see why?
+
+
+<img width="1334" height="910" alt="image" src="https://github.com/user-attachments/assets/4fda44b4-ebf2-460b-bb90-9eb59b719b4b" />
+
+we need 50GB for Bastion host, as we run terraform init multiple number of times, each init will generate .terraform folder with more than 1 GB.
+
+<img width="1332" height="910" alt="image" src="https://github.com/user-attachments/assets/a08d6a82-789a-4849-aff3-39121f32dad2" />
+<img width="1294" height="660" alt="image" src="https://github.com/user-attachments/assets/d3cc0b35-aa55-4a6f-9a16-a1b7e7560340" />
+
+
+
+<img width="1049" height="510" alt="image" src="https://github.com/user-attachments/assets/d2d169fc-5667-4547-b005-a7fb549450d0" />
+
+
+<img width="798" height="308" alt="image" src="https://github.com/user-attachments/assets/85d84877-0480-4e1b-b21b-1b99eb53025e" />
+
+
+
+
+<img width="622" height="273" alt="image" src="https://github.com/user-attachments/assets/5848ef4b-22ef-4127-a945-0cf32635e3b7" />
+
+3 resources are getting created:
+1) EC2 instance for MongoDB
+2) Route53 record for MongoDB
+3) terraform data -> terraform data will not create any resources, it follows standard terraform lifecycle, we can use terraform data for provisioners, and we can use triggers to control terraform data, earlier this is called as null resource.
+
+<img width="392" height="149" alt="image" src="https://github.com/user-attachments/assets/eafb00db-1bf6-41d3-b380-99317c54607d" />
+
+
+Now, when we click on terraform apply, resources will get created, and the following connection gets established - from bastion to mongodb:
+
+<img width="1356" height="922" alt="image" src="https://github.com/user-attachments/assets/03941fa8-23d3-477c-ae5f-564d10619311" />
+
+first the bootstrap.sh file will be place in the mongodb server
+next the remote-exec will be called, and it will execute the bootstrap.sh , after execution what will happen?
+<img width="1319" height="948" alt="image" src="https://github.com/user-attachments/assets/66174d9b-6578-41d6-a58e-fcfc4cd6face" />
+
+component will get -> mongodb
+environment will get -> dev
+and it will install ansible, create /var/log/roboshop/ directory
+and creates ansible.log file with the necessary permissions
+
+then it will clone the roboshop-ansible-v3.git
+ and then git pull before, to check if there are any things missing
+
+ and then execute ansible-playbook  with component = mongodb, and environment = dev  roboshop.yaml file
+
+ <img width="1069" height="796" alt="image" src="https://github.com/user-attachments/assets/c1306a2a-bbc8-4f7f-9038-eec1e188e51f" />
+
+ Flow:
+
+ these ansible variables below, gave it to terraform:
+ 
+ <img width="1240" height="879" alt="image" src="https://github.com/user-attachments/assets/c7ad2e33-8c3b-4294-9d1a-5c90a6a378e9" />
+
+ now, terraform gave the enviornment variable to shell script:
+<img width="1286" height="847" alt="image" src="https://github.com/user-attachments/assets/ab40cd35-c0e2-4ec2-bfae-6f2fe19742fb" />
+
+shellscript took it, and gave it to ansible:
+
+<img width="1578" height="962" alt="image" src="https://github.com/user-attachments/assets/7104166f-b000-4fbe-855f-46f4263c7077" />
+
+
+
+ 
+ 
+ 
+
+
+ 
 
 
 
 
 
 
-
-
+   
 
 
 
