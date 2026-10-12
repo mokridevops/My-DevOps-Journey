@@ -475,8 +475,52 @@ shellscript took it, and gave it to ansible:
 
 
 
+ # to run this:  I logged in to Bastion host on mobaxterm:
+
  
+ <img width="947" height="463" alt="image" src="https://github.com/user-attachments/assets/a6b763ab-cfb9-4c2c-8ccb-690fcb24a1fd" />des
+
  
+<img width="1232" height="123" alt="image" src="https://github.com/user-attachments/assets/ecc8bbb1-6e6f-44bf-bdd5-1620a030afa5" />
+
+
+<img width="1520" height="936" alt="image" src="https://github.com/user-attachments/assets/6128e797-d993-4739-87d0-2b28afc0de48" />
+
+<img width="1321" height="102" alt="image" src="https://github.com/user-attachments/assets/3068b613-0286-4b09-83e9-3b5f00bfcf4b" />
+
+
+
+
+<img width="1030" height="469" alt="image" src="https://github.com/user-attachments/assets/b01fe8d4-36ef-4986-ba9e-0ecd7786d203" />
+
+
+
+ 
+<img width="730" height="280" alt="image" src="https://github.com/user-attachments/assets/6e59a4b6-d751-443a-a916-546c6e8028bd" />
+
+<img width="598" height="193" alt="image" src="https://github.com/user-attachments/assets/17b2e985-1e1b-41b0-9e6b-58c199498c78" />
+
+
+<img width="1105" height="934" alt="image" src="https://github.com/user-attachments/assets/968f6a87-a219-4b9c-bd5e-8fa476e306dc" />
+
+<img width="1485" height="928" alt="image" src="https://github.com/user-attachments/assets/4dd481c8-edc4-4245-b045-0517e5047c3f" />
+
+<img width="1473" height="273" alt="image" src="https://github.com/user-attachments/assets/afc6b402-b1ac-4880-adf2-9d5b8bd7607f" />
+
+
+<img width="1480" height="349" alt="image" src="https://github.com/user-attachments/assets/1fd59d77-08b3-4af9-b861-b9f7f9e337d4" />
+
+<img width="1534" height="654" alt="image" src="https://github.com/user-attachments/assets/7a67128e-90d6-4b87-8334-1f9430c51dd9" />
+
+Mongodb is installed now.
+
+
+
+
+
+
+
+
  
 
 
