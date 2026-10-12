@@ -440,7 +440,7 @@ we need 50GB for Bastion host, as we run terraform init multiple number of times
 <img width="392" height="149" alt="image" src="https://github.com/user-attachments/assets/eafb00db-1bf6-41d3-b380-99317c54607d" />
 
 
-Now, when we click on terraform apply, resources will get created, and the following connection gets established - from bastion to mongodb:
+Now, when we click on terraform apply, resources will get created, and the following connection gets established - from bastion to mongodb, because there is a security group connection that will allow bastion to mongodb connection:
 
 <img width="1356" height="922" alt="image" src="https://github.com/user-attachments/assets/03941fa8-23d3-477c-ae5f-564d10619311" />
 
