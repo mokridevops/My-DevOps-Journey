@@ -185,7 +185,8 @@ this output value exposes your EC2 instances hostname from your terraform worksp
 <img width="544" height="73" alt="image" src="https://github.com/user-attachments/assets/252dc814-27d9-476e-b04e-fd43acf9d819" />
 
 
-
+# Modules
+Reusable sets of configuration - with multiple sets of resources and data sources
 
 
 
