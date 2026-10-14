@@ -188,6 +188,16 @@ this output value exposes your EC2 instances hostname from your terraform worksp
 # Modules
 Reusable sets of configuration - with multiple sets of resources and data sources
 
+## Module blocks
+<img width="583" height="311" alt="image" src="https://github.com/user-attachments/assets/955011eb-30f9-4391-8e24-ce9132defc13" />
+
+### Note: whenever you add a new module to your configuration, you will need to install it by re-initializing the workspace.
+
+> terraform init
+###  When you initialize an existing workspace, Terraform detects and installs any new providers and modules.
+###  Terraform tracks the current versions of the providers used in your configuration in the **.terraform.lock.hcl** file.
+
+### When Terraform creates an execution plan, it constructs a dependency graph to determine the correct order of operations. When you apply your plan, Terraform creates, updates and destroys your resources in dependency order, and in parallel when possible.
 
 
 
