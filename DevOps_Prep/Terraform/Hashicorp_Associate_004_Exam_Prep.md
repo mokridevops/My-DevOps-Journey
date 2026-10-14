@@ -169,7 +169,7 @@ variables.tf
 
 changing the variables, in command line:
 
-> terraform plan -var instance_type=t2.large
+### > terraform plan -var instance_type=t2.large
 
 <img width="644" height="590" alt="image" src="https://github.com/user-attachments/assets/274b00a2-8959-4e9c-8e85-3b8d250aca51" />
 
