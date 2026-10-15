@@ -26,3 +26,4 @@ Employee avg working hours -> AVGCPU Utilization
 5. create launch template
 
    
+<img width="1800" height="687" alt="image" src="https://github.com/user-attachments/assets/01727f59-ab87-4b2d-b778-9d8543395673" />
