@@ -2,7 +2,7 @@
 <img width="1272" height="607" alt="image" src="https://github.com/user-attachments/assets/fd9a11e3-555d-4b80-ba93-c8c8713db6d3" />
 
 
-IAM User
+IAM User\n
 IAM Role
 IAM Policy
 IAM Role to EC2 instance through instance profile
