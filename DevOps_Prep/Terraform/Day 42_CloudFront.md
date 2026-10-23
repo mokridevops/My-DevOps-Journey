@@ -59,6 +59,38 @@ if no behavior is matching, then it will go to default -> Caching Disabled
 <img width="1892" height="556" alt="image" src="https://github.com/user-attachments/assets/4cd1a1b4-227c-4750-86ff-52f87216c650" />
 
 
+now, it got deployed:
+
+<img width="1853" height="928" alt="image" src="https://github.com/user-attachments/assets/d1a427f4-fa21-4221-9392-17a11be25fc2" />
+
+now we will access by saying: roboshop-cdn.daws90s.shop
+
+<img width="1513" height="622" alt="image" src="https://github.com/user-attachments/assets/b4d6dee9-cc84-4ef4-86c1-3d3db7bdc0da" />
+
+it is not pulling the roboshop page, lets create Route53 record:
+
+### For CDN we need to create a Route53 record
+
+## We can create CloudFront only in US-EAST-1 region, no other regions we can create cloudfronts
+
+<img width="1853" height="926" alt="image" src="https://github.com/user-attachments/assets/296397b9-5f40-4e24-a880-9f8e390a3603" />
+
+<img width="1726" height="900" alt="image" src="https://github.com/user-attachments/assets/a486f34a-27cf-4d26-a2f3-db40d78d975d" />
+
+<img width="1832" height="886" alt="image" src="https://github.com/user-attachments/assets/43992586-b707-4e46-8787-e07f248e680b" />
+
+<img width="1850" height="937" alt="image" src="https://github.com/user-attachments/assets/2e04e593-b1df-4898-add8-e61db386a526" />
+
+<img width="1884" height="956" alt="image" src="https://github.com/user-attachments/assets/51845760-ccf0-4a2c-ae91-2fd2c77a6d17" />
+
+
+
+
+
+
+
+
+
 
 
 
