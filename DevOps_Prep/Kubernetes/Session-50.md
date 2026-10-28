@@ -287,6 +287,158 @@ to get in to the pod:
 > kubectl exec -it nginx -- bash
 
 
+<img width="780" height="407" alt="image" src="https://github.com/user-attachments/assets/e7312526-f432-4492-a663-2bc08d17b32b" />
+
+changed the name to nginx - and tried to do kubectl apply -f 02-pods.yaml
+
+<img width="565" height="117" alt="image" src="https://github.com/user-attachments/assets/9e187368-fa40-49cc-aad5-85c8fd0aa858" />
+
+got ErrImagePull
+
+<img width="648" height="382" alt="image" src="https://github.com/user-attachments/assets/727ca2c0-0827-4f89-a6c0-46dff644ad7a" />
+
+-----------------
+image.png
+each time i am getting different error message why?
+From the screenshot, Kubernetes is not actually showing different root causes. It is showing different phases of the same problem.
+
+You are seeing:
+
+ErrImagePull
+ImagePullBackOff
+CrashLoopBackOff
+What each status means
+1. ErrImagePull
+Kubernetes tried to pull the container image and failed.
+
+Common reasons:
+
+Wrong image name
+Wrong image tag
+Docker Hub authentication/rate limit issues
+No internet access from the node
+Example:
+
+
+
+image: nginx123:latest
+Since nginx123 doesn't exist, Kubernetes returns:
+
+
+
+ErrImagePull
+2. ImagePullBackOff
+After repeated image pull failures, Kubernetes stops trying continuously and starts backing off.
+
+Flow:
+
+
+
+Pull Image
+    ↓
+Fail
+    ↓
+ErrImagePull
+    ↓
+Retry
+    ↓
+Fail Again
+    ↓
+ImagePullBackOff
+This is expected behavior and not a new error.
+
+3. CrashLoopBackOff
+This happens after the image is successfully pulled but the container keeps crashing.
+
+Flow:
+
+
+
+Image Pulled
+     ↓
+Container Started
+     ↓
+Container Exits
+     ↓
+Restart
+     ↓
+Exits Again
+     ↓
+CrashLoopBackOff
+Common reasons:
+
+Invalid startup command
+Application crashes
+Missing environment variables
+Missing files/configuration
+Why are you getting alternating statuses?
+Kubernetes continuously reconciles the pod state.
+
+Your pod might be going through:
+
+
+
+ErrImagePull
+      ↓
+ImagePullBackOff
+      ↓
+Image becomes available OR pull succeeds temporarily
+      ↓
+Container starts
+      ↓
+Container crashes
+      ↓
+CrashLoopBackOff
+Or the pod may have been recreated multiple times.
+
+Don't rely on kubectl get pods
+The real answer is always in:
+
+
+
+kubectl describe pod nginx
+Run:
+
+
+
+kubectl describe pod nginx
+Look at the Events section at the bottom.
+
+You'll see something like:
+
+
+
+Failed to pull image "nginx123"
+or
+
+
+
+Back-off pulling image
+or
+
+
+
+Back-off restarting failed container
+Also check the YAML
+Show me the contents of:
+
+
+
+cat 02-pod.yaml
+and the output of:
+
+
+
+kubectl describe pod nginx
+That will reveal the exact root cause in a few lines.
+
+--------------------------
+
+
+
+
+
+
 
 
    
