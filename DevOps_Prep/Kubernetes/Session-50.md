@@ -56,8 +56,40 @@ sudo cp kubectl /usr/local/bin/kubectl
 check if aws is properly configured by : > aws s3 ls
 it should list the aws s3 buckets you created
 
+---------
+
+through out Kubernetes we will keep seeing : 
+Kind:
+api_version:
+meta_data:
+
+
+
 
 <img width="425" height="130" alt="image" src="https://github.com/user-attachments/assets/62c71ed6-aa4d-4ba5-adc5-608ad068f767" />
+
+
+
+## eksctl - cluster creation examples:
+
+<img width="942" height="531" alt="image" src="https://github.com/user-attachments/assets/429e7d39-0a66-4c90-ac69-a9432967f828" />
+
+
+
+<img width="924" height="486" alt="image" src="https://github.com/user-attachments/assets/bec30667-53ae-400d-ada6-e1304cc06c34" />
+
+<img width="666" height="315" alt="image" src="https://github.com/user-attachments/assets/39be82fe-ef70-42a9-95fd-34688a0b4dfa" />
+
+
+<img width="831" height="350" alt="image" src="https://github.com/user-attachments/assets/170270fd-6d3b-4c98-8ce8-c60fa004eadf" />
+
+<img width="791" height="414" alt="image" src="https://github.com/user-attachments/assets/e1344eba-3291-43b7-8337-421c7f991e6b" />
+
+this command will start cluster creation, it will take around 20 mins to create the cluster with two nodes
+
+<img width="957" height="554" alt="image" src="https://github.com/user-attachments/assets/3c799349-518c-449a-8215-3f20524daad1" />
+
+
 
 
 
