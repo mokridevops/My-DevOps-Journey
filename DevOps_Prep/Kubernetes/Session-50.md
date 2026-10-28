@@ -256,6 +256,42 @@ pod is the smallest deployable unit in kubernetes.  Pod contains one or more con
 
 <img width="590" height="56" alt="image" src="https://github.com/user-attachments/assets/52ee1234-5f16-417e-af28-2362e4a1ed19" />
 
+<img width="718" height="273" alt="image" src="https://github.com/user-attachments/assets/acfec6a4-de8d-467f-978c-8756f53a8055" />
+<img width="777" height="448" alt="image" src="https://github.com/user-attachments/assets/c5fccc6b-3304-468b-844e-d8e9e6cfff46" />
+
+
+
+<img width="1553" height="895" alt="image" src="https://github.com/user-attachments/assets/f4406415-b8aa-4edc-8bc0-415e8db266d8" />
+
+
+<img width="791" height="432" alt="image" src="https://github.com/user-attachments/assets/cf48ea60-4384-4266-9898-f2cff5113020" />
+
+so the container is created in the first node, which is matching that ip address
+
+<img width="710" height="420" alt="image" src="https://github.com/user-attachments/assets/93c7ba60-13cd-4f2b-839d-8543f038ef7b" />
+
+
+two types of issues, that we encounter:
+1) ImagePullBackOff/ErrImagePull -> node is not able to pull the image
+   1. authentication issues
+   2. image address is not correct
+2) CrashLoopBackOff -> unable to start containerd
+   check the container command
+
+to check the events to troubleshoot : kubectl describe pod nginx
+
+
+to get in to the pod:
+<img width="566" height="46" alt="image" src="https://github.com/user-attachments/assets/17858e6d-d827-40ae-9385-a6a26cb14746" />
+
+> kubectl exec -it nginx -- bash
+
+
+
+
+   
+
+
 
  
 
