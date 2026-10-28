@@ -200,6 +200,11 @@ metadata:
     
 
 
+K8 - resources:
+
+<img width="653" height="384" alt="image" src="https://github.com/user-attachments/assets/7d775fb8-f17f-4d31-af68-e30ff16b3d72" />
+
+
 
 
 
