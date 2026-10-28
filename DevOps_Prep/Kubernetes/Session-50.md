@@ -24,7 +24,13 @@ curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$
 tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
 sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 
+<img width="698" height="528" alt="image" src="https://github.com/user-attachments/assets/64a07e71-1a90-40a3-9b5f-aa4609892b75" />
+
+
 Note: we are adding eksctl to /usr/local/bin -> that means it will be globally accessible.
+
+
+<img width="680" height="530" alt="image" src="https://github.com/user-attachments/assets/08b0d875-3836-4e6e-9b0e-f91ee092a792" />
 
 
 
