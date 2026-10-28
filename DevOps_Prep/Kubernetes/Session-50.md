@@ -89,6 +89,33 @@ this command will start cluster creation, it will take around 20 mins to create 
 
 <img width="957" height="554" alt="image" src="https://github.com/user-attachments/assets/3c799349-518c-449a-8215-3f20524daad1" />
 
+it is creating the cluster :
+
+<img width="956" height="529" alt="image" src="https://github.com/user-attachments/assets/51c43561-7854-4bb4-b2f9-2fd77fe97ea5" />
+
+you can see the cluster creation under -> Amazon Elastic Kubernetes Service
+
+Now, we see the cluster got created:
+
+
+<img width="946" height="426" alt="image" src="https://github.com/user-attachments/assets/b21e6649-82cf-4087-a217-8f65835249c1" />
+
+
+and we also see that two nodes got created, apart from the workstation:
+
+<img width="949" height="543" alt="image" src="https://github.com/user-attachments/assets/5c0f9038-e4db-49f5-8fa4-c4e81c1c81a1" />
+
+How to authenticate to the created cluster:
+
+> aws eks update-kubeconfig --name roboshop-dev --region us-east-1
+
+
+
+
+
+
+
+
 
 
 
