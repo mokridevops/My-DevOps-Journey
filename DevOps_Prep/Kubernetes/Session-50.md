@@ -52,6 +52,11 @@ sudo cp kubectl /usr/local/bin/kubectl
 
 <img width="880" height="497" alt="image" src="https://github.com/user-attachments/assets/94ce52eb-27f4-4497-9bc4-5d0954ea719e" />
 
+
+<img width="425" height="130" alt="image" src="https://github.com/user-attachments/assets/62c71ed6-aa4d-4ba5-adc5-608ad068f767" />
+
+
+
 check if aws is properly configured by : > aws s3 ls
 it should list the aws s3 buckets you created
 
