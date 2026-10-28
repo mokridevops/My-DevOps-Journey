@@ -249,7 +249,12 @@ pod is the smallest deployable unit in kubernetes.  Pod contains one or more con
 
  <img width="487" height="353" alt="image" src="https://github.com/user-attachments/assets/7976404c-fc0f-40d8-94fd-ae70ff2503a6" />
 
- 
+ <img width="565" height="314" alt="image" src="https://github.com/user-attachments/assets/8d2619c5-6829-4f67-8c75-dab9d2dcd246" />
+
+
+<img width="665" height="255" alt="image" src="https://github.com/user-attachments/assets/894e949a-10a1-4797-985b-50074b3db2ee" />
+
+<img width="590" height="56" alt="image" src="https://github.com/user-attachments/assets/52ee1234-5f16-417e-af28-2362e4a1ed19" />
 
 
  
