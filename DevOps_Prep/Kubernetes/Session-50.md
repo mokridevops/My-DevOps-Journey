@@ -30,7 +30,14 @@ sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 Note: we are adding eksctl to /usr/local/bin -> that means it will be globally accessible.
 
 
+### kubectl installation instructions:
+
 <img width="680" height="530" alt="image" src="https://github.com/user-attachments/assets/08b0d875-3836-4e6e-9b0e-f91ee092a792" />
 
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.36.2/2026-07-05/bin/linux/amd64/kubectl
+
+chmod +x ./kubectl
+
+sudo cp kubectl /usr/local/bin/kubectl
 
 
