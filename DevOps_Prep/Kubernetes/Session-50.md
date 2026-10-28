@@ -17,6 +17,14 @@ sudo usermod -aG docker ec2-user
 <img width="943" height="524" alt="image" src="https://github.com/user-attachments/assets/5468ea65-1b92-4baf-9068-ac16efcdbf4e" />
 
 ### eksctl installation instructions:
+# for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+ARCH=$(uname -m | sed 's/x86_64/amd64/' | sed 's/aarch64/arm64/')
+PLATFORM=$(uname -s)_$ARCH
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
+
+Note: we are adding eksctl to /usr/local/bin -> that means it will be globally accessible.
 
 
 
