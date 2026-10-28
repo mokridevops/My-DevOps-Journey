@@ -204,6 +204,66 @@ K8 - resources:
 
 <img width="653" height="384" alt="image" src="https://github.com/user-attachments/assets/7d775fb8-f17f-4d31-af68-e30ff16b3d72" />
 
+to apply this resources:
+
+> kubectl apply -f 01-namespace.yaml
+
+<img width="642" height="259" alt="image" src="https://github.com/user-attachments/assets/b3822674-69d4-4876-a2bb-42af247978d4" />
+
+to see the resources:
+
+> kubectl get namespace
+
+<img width="610" height="160" alt="image" src="https://github.com/user-attachments/assets/791e4213-bef5-4886-af79-9635069c1dc7" />
+
+to describe the namespace resource
+
+> kubectl describe namespace roboshop
+
+<img width="615" height="222" alt="image" src="https://github.com/user-attachments/assets/ea44e24d-2e59-4b0b-a820-44b5f331d14f" />
+
+to see in yaml format
+
+> kubectl get namespace roboshop -o yaml
+
+<img width="787" height="292" alt="image" src="https://github.com/user-attachments/assets/401ef32f-1f82-4df9-be72-0d42d41c3bf0" />
+
+to delete namespace:
+
+> kubectl delete -f 01-namespace.yaml
+
+<img width="586" height="53" alt="image" src="https://github.com/user-attachments/assets/bd996cbf-0768-452e-b78f-2ad657438299" />
+
+<img width="635" height="233" alt="image" src="https://github.com/user-attachments/assets/0c69635f-ffb0-4096-8a7a-1057ff1d56fe" />
+
+shortcuts:
+
+<img width="791" height="348" alt="image" src="https://github.com/user-attachments/assets/2d36d0e0-ae74-477e-9337-7e112e32d9b7" />
+
+
+# pod:
+
+pod is the smallest deployable unit in kubernetes.  Pod contains one or more containers.  Containers in pod share same network space and storage.
+
+ kubernetes.io
+
+ <img width="487" height="353" alt="image" src="https://github.com/user-attachments/assets/7976404c-fc0f-40d8-94fd-ae70ff2503a6" />
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
