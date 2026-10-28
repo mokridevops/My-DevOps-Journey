@@ -110,6 +110,94 @@ How to authenticate to the created cluster:
 > aws eks update-kubeconfig --name roboshop-dev --region us-east-1
 
 
+<img width="938" height="509" alt="image" src="https://github.com/user-attachments/assets/d60733be-e936-4219-9f7e-3f92f1601abb" />
+
+<img width="936" height="505" alt="image" src="https://github.com/user-attachments/assets/faefac95-411f-4c0e-b6e2-7ce7b3b45cd5" />
+
+<br>
+
+<img width="411" height="140" alt="image" src="https://github.com/user-attachments/assets/bb3118c1-821d-4758-ba24-b363c78eb107" />
+
+<img width="755" height="330" alt="image" src="https://github.com/user-attachments/assets/a0c7c282-c8da-4e77-afd2-1b3f92c11581" />
+
+<img width="778" height="449" alt="image" src="https://github.com/user-attachments/assets/77e28273-4e4e-4935-9c70-fe5cc682e85c" />
+
+<img width="487" height="447" alt="image" src="https://github.com/user-attachments/assets/8e2ad3f1-570e-4e25-b0d7-002d1e767249" />
+
+so, the aws and kubectl - will use this config file
+
+so, Kuberbetes (K8s) authentication and authorization config will be at -> .kube/config
+
+<img width="602" height="149" alt="image" src="https://github.com/user-attachments/assets/c07b15fc-bc0d-425f-b710-0ae661f790db" />
+
+Here, we cannot access EKS control pane, only UI, it is completely managed by Kubernetes, and workloads will not run on EKS control pane, workloads will only run on the nodes, that were created
+
+Amazon EKS - in the below picture is called Master node, and the other EC2 instances are called worker nodes.
+
+
+<img width="653" height="328" alt="image" src="https://github.com/user-attachments/assets/e65622af-fc89-42cd-9f2d-9a2f5d21448b" />
+
+<img width="643" height="321" alt="image" src="https://github.com/user-attachments/assets/9614dd19-9ce5-4c68-97b0-aa5ee46b0497" />
+
+
+
+Everything is called a resource in Kubernetes, any resource we can configure through YAML:
+
+> Kubectl api-resources
+
+<img width="772" height="384" alt="image" src="https://github.com/user-attachments/assets/29ff02aa-c623-4175-b578-eb932cc169f4" />
+
+there are two types of resources:
+1. namespace level
+2. cluster level
+
+Namespace: 
+---------
+An isolated project space where we can create our Kubernetes resources, just like VPC.
+roboshop, expense, amazon, hdfc, flipkart, etc
+
+In aws - we have vpc resources and non-vpc resources:
+
+Route53 - non vpc resource
+Security Group - vpc resource
+CloudFront - non vpc resource  
+
+the resources that are binded to vpc - are vpc resources
+the resources that are not binded to vpc - are non vpc resources
+
+<img width="783" height="457" alt="image" src="https://github.com/user-attachments/assets/db830856-1730-4943-9f22-e288e6faa533" />
+
+
+apiversion: in api version, there are a lot, so all one type of resources are grouped together and are given a name in apiversion, such as: v1, apps/v1, authentication.k8s/io/v1, authorization.k8s.io/v1
+kind: # resource type
+
+
+mostly our core apiversion is v1:
+
+<img width="776" height="459" alt="image" src="https://github.com/user-attachments/assets/c90ee15b-649b-4c60-b796-bbce87b6fcf1" />
+
+we will have everything we need in v1 apiversion only
+
+
+apiversion:
+kind:
+metadata:
+spec: the specifications that we give to run an image
+
+
+To create a Namespace:
+namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: custom-namespace  # this is the name of the namespace
+  labels:
+    environment: production
+
+
+    <img width="452" height="193" alt="image" src="https://github.com/user-attachments/assets/bd837a67-1853-4bc0-8e36-9a79ee35c176" />
+
+    
 
 
 
