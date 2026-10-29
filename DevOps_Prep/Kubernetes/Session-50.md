@@ -298,7 +298,8 @@ got ErrImagePull
 <img width="648" height="382" alt="image" src="https://github.com/user-attachments/assets/727ca2c0-0827-4f89-a6c0-46dff644ad7a" />
 
 -----------------
-image.png
+<img width="742" height="492" alt="image" src="https://github.com/user-attachments/assets/96c71abe-f45d-4741-80f0-9b2d6cba4276" />
+
 each time i am getting different error message why?
 From the screenshot, Kubernetes is not actually showing different root causes. It is showing different phases of the same problem.
 
