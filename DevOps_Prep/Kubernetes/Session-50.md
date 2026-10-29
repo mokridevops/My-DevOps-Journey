@@ -547,8 +547,7 @@ that means, for pod to pod communication - we use Service
 
 
 
-
-
+<img width="676" height="445" alt="image" src="https://github.com/user-attachments/assets/48d84c0d-c119-4f70-b287-f0efacd02a76" />
 
 
 
