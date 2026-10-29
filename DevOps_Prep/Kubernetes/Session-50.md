@@ -519,6 +519,24 @@ Note: if there are lot of env variables, each time to update those, we need to c
 
 
 
+## secrets:
+<img width="729" height="412" alt="image" src="https://github.com/user-attachments/assets/1d3570fd-feb1-45ae-bcaa-2ae02560ec16" />
+
+<img width="933" height="515" alt="image" src="https://github.com/user-attachments/assets/ad494e0e-fc3c-4c3d-ab06-eb20e8052a25" />
+
+<img width="557" height="50" alt="image" src="https://github.com/user-attachments/assets/1df8e9b7-2aab-47c9-90d8-36b612ababc6" />
+
+<img width="574" height="110" alt="image" src="https://github.com/user-attachments/assets/f6f31cbd-9bdb-4685-a501-dfeea79f3bbc" />
+
+<img width="644" height="144" alt="image" src="https://github.com/user-attachments/assets/24139d65-69f4-4722-9c86-3cb559ff846b" />
+
+<img width="596" height="386" alt="image" src="https://github.com/user-attachments/assets/f1ce502f-074b-426a-beb9-e0fc01502d44" />
+
+
+
+
+
+
 
 
 
