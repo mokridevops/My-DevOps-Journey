@@ -435,6 +435,43 @@ That will reveal the exact root cause in a few lines.
 
 --------------------------
 
+10/29/2025
+15 - July
+Session - 50
+
+--------------------------
+
+Side car container:
+
+
+<img width="514" height="239" alt="image" src="https://github.com/user-attachments/assets/8f042f94-b67c-4953-b61b-fc1d55f37338" />
+
+container/pod - are ephimeral (that means they will die)
+however we cannot leave the logs to die, hence need to take proper backup of logs, otherwise logs will get deleted when pods will be deleted
+
+so, we need to shift the logs outside of the pod: that is called ELK
+
+side car container will access the logs from /var/log/nginx and push it to ELK: Elastic Log Stash Kibana
+
+so, we can say - containers in the pod, will share same network and same storage.
+
+if one container is main container, the second one is called side car container.
+
+<img width="691" height="487" alt="image" src="https://github.com/user-attachments/assets/3f0a6daa-3e73-4849-b6b6-9e3cd3829572" />
+
+------------
+
+## labels : labels add metadata to the pod, these are selectors inside Kubernetes. You can't have special chars, max chars allowed: 63
+
+To attach one resource to another resource these labels will be useful.
+
+
+## annotations: 
+annotations are used to provide information to resources external to kubernetes. You can have URL's, special characters. Max length: 256KB (very lengthy).
+
+
+
+
 
 
 
