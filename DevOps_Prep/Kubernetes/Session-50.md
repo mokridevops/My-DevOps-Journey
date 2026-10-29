@@ -537,8 +537,13 @@ Note: if there are lot of env variables, each time to update those, we need to c
 
 
 
+----------------
 
+If you want to expose your pods to outside world, we must attach service
 
+<img width="866" height="181" alt="image" src="https://github.com/user-attachments/assets/632cc202-3eae-45ca-8b2a-37bba3682ff5" />
+
+that means, for pod to pod communication - we use Service
 
 
 
