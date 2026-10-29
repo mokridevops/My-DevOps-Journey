@@ -469,6 +469,61 @@ To attach one resource to another resource these labels will be useful.
 ## annotations: 
 annotations are used to provide information to resources external to kubernetes. You can have URL's, special characters. Max length: 256KB (very lengthy).
 
+<img width="822" height="445" alt="image" src="https://github.com/user-attachments/assets/51a547cb-1393-4594-8a15-4c312acad74c" />
+<img width="761" height="384" alt="image" src="https://github.com/user-attachments/assets/b3cf5a28-827e-4fc3-91df-5efd1d68dbf3" />
+
+
+-------------
+Biggest advantage of containers: Containers can consume resources dynamically.
+However, disadvantage is: if resources are locked, containers keep using more and more resources.  other containers in the host cannot get resources.
+
+## Resources:
+We should limit resources always to containers/pod
+
+cpu and ram/memory
+
+softlimit
+
+hardlimit
+
+<img width="798" height="547" alt="image" src="https://github.com/user-attachments/assets/5023e3e6-2538-4e6f-b77a-2843254ce9cc" />
+
+<img width="687" height="194" alt="image" src="https://github.com/user-attachments/assets/143a655e-20a7-4d21-802a-19262ca05fa1" />
+
+Note: always make it a point to give the softlimit and hardlimit for the resources mandatorily - as best practice for container's resource use.
+
+
+## environment:
+<img width="822" height="484" alt="image" src="https://github.com/user-attachments/assets/2f93e6d1-e657-42d5-b3ea-a33468ccac67" />
+
+<img width="620" height="170" alt="image" src="https://github.com/user-attachments/assets/a8b7c92f-764e-41f5-a334-fcdd699a5cf5" />
+
+<img width="668" height="347" alt="image" src="https://github.com/user-attachments/assets/94ed1f17-7ec5-4854-bdca-622f92f6ce45" />
+
+
+
+Note: if there are lot of env variables, each time to update those, we need to change the yaml file and then apply kubectl every time, instead of that, we write all the env variables in a configmap, and attach it to Pod.
+
+## configmap:
+
+<img width="806" height="482" alt="image" src="https://github.com/user-attachments/assets/4950bb57-648d-45d5-a5d9-d3e5421babd8" />
+
+<img width="830" height="519" alt="image" src="https://github.com/user-attachments/assets/8ae87ceb-9f8e-4dfb-82c8-62f4bcd306ae" />
+
+<img width="639" height="314" alt="image" src="https://github.com/user-attachments/assets/2637cbd2-b20a-4590-b0aa-59cfcec0ddd3" />
+
+<img width="611" height="353" alt="image" src="https://github.com/user-attachments/assets/74fe9ceb-ff39-4fdf-b70a-1276143efeb6" />
+
+
+## Secrets
+
+
+
+
+
+
+
+
 
 
 
