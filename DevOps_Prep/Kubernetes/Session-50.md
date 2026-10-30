@@ -158,8 +158,8 @@ roboshop, expense, amazon, hdfc, flipkart, etc
 
 In aws - we have vpc resources and non-vpc resources:
 
-Route53 - non vpc resource
-Security Group - vpc resource
+Route53 - non vpc resource;
+Security Group - vpc resource;
 CloudFront - non vpc resource  
 
 the resources that are binded to vpc - are vpc resources
