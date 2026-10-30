@@ -85,7 +85,15 @@ In a cluster - how many instances are there, that many node ports will get opene
 <img width="1258" height="773" alt="image" src="https://github.com/user-attachments/assets/5f64e5b4-0f04-417c-9b39-011bd32fa391" />
 
 
+<img width="1229" height="649" alt="image" src="https://github.com/user-attachments/assets/e998d517-9680-4ef6-bb2d-449e2db07c75" />
+
+this is a loadbalancer that is created, this is a classic load balancer
+
+
+<img width="797" height="364" alt="image" src="https://github.com/user-attachments/assets/ccba9fdf-6b22-4aaf-aba0-81698726c995" />
 
 
 
 
+
+****
