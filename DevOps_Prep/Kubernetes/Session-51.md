@@ -8,3 +8,6 @@ Since pod is ephimeral (it does not exist forever), we can't use pod ip as DNS, 
 Each of the pods, register their IP address with the Service. (Kubernetes Service)
 
 once the request hits the service, the service acts as a load balancer, and sends the request to each of the pods in a round robin algorithm.
+
+
+### A Kubernetes (K8s) Service is an abstract way to define a logical set of Pods and a policy to access them.
