@@ -47,10 +47,42 @@ there are 3 types of services:
 this is the IP address for the service
 
 2. nodePort -> expose pod to outside world in internet
+   http://ec2-ip:nodePort -> clusterIP -> pod
+30000 - 32767 -> ephemeral ports for nodePort
+Kubernetes opens one ephemeral nodePort in all the worker nodes, if you hit any worked node on that nodePort, traffic will be forwarded to cluserIP and then to the Pod
 
-3. 
+   if any user hits one of the EC2 instance, it will forward to clusterIP, and from ClusterIP it will forward to Pod.
+
+<img width="1291" height="776" alt="image" src="https://github.com/user-attachments/assets/e1c8fd75-55ab-405b-8f26-253de7d96fb0" />
+
+<img width="1231" height="458" alt="image" src="https://github.com/user-attachments/assets/9b179ebf-480e-4d41-9a28-3e5609317593" />
+
+<img width="1055" height="435" alt="image" src="https://github.com/user-attachments/assets/8add2936-0c1c-4072-8c53-cecbee34b52d" />
 
 
+With NodePorts since - the Pod will be able to communicate with outside world, it is not that safe.
+
+Currently they are open to public, but when we implement in production system - we put them in public subnet, hence they will be protected from outside public.
+
+3. Load Balancer -
+
+   <img width="341" height="315" alt="image" src="https://github.com/user-attachments/assets/e41945f4-a001-46c3-abe9-ec663ab4b41b" />
+
+<img width="1112" height="755" alt="image" src="https://github.com/user-attachments/assets/d10f15f9-463d-42fd-9aab-72205c6ccdc3" />
+
+
+   
+
+
+
+
+
+In a cluster - how many instances are there, that many node ports will get opened
+
+<img width="757" height="358" alt="image" src="https://github.com/user-attachments/assets/d8005486-de94-47ae-8cad-8a2c05a3c2d7" />
+
+
+<img width="1258" height="773" alt="image" src="https://github.com/user-attachments/assets/5f64e5b4-0f04-417c-9b39-011bd32fa391" />
 
 
 
