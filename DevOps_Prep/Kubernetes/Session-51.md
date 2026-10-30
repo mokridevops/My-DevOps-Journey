@@ -11,3 +11,10 @@ once the request hits the service, the service acts as a load balancer, and send
 
 
 ### A Kubernetes (K8s) Service is an abstract way to define a logical set of Pods and a policy to access them.
+
+<img width="1851" height="1051" alt="image" src="https://github.com/user-attachments/assets/267a1c98-3123-4f05-968c-45f565e986bf" />
+
+
+<img width="1699" height="1004" alt="image" src="https://github.com/user-attachments/assets/a38fa5a2-a9ac-430a-94f9-02fc9028eabf" />
+
+if you hit on the service name: nginix-service, then the service -> will consider the pods (ip addresses) that are registered to that service, it will send the traffic to port 80 (container port)
