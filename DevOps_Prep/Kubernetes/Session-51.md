@@ -92,6 +92,74 @@ this is a loadbalancer that is created, this is a classic load balancer
 
 <img width="797" height="364" alt="image" src="https://github.com/user-attachments/assets/ccba9fdf-6b22-4aaf-aba0-81698726c995" />
 
+<img width="1855" height="959" alt="image" src="https://github.com/user-attachments/assets/8401e5e3-5497-4907-aefb-a1e1ec5a9cc4" />
+
+in AWS console, we see that the load balancer is created
+
+it has in Target instances - the two nodes of the cluster:
+
+<img width="1883" height="931" alt="image" src="https://github.com/user-attachments/assets/ac3348eb-26d4-4120-af6c-85ff5b6594ed" />
+
+now we can give the dns directly on the browser - so no problem of security with dns
+
+<img width="1681" height="493" alt="image" src="https://github.com/user-attachments/assets/ae102e3e-59ba-43c4-941d-a56e4660af00" />
+
+questions: If we want pod to expose internally - we use: CusterIP
+           if we want pods to expose externally - we use nodeport, however since  it is not that much secure, we go with load balancer
+
+           
+
+
+# Sets:
+----------
+
+1. replicaset
+2. deployment
+3. statefulset
+4. daemonset
+
+
+1. replicaset
+
+   When there is lot of traffic, you need to increase number of pods to handle the traffic, in that case - we cannot give nginx-1, nginx-2....etc
+
+   Kubernetes gives us an option to use replicaset - that means it creates replicas of the pods and gives its names
+
+   <img width="1246" height="937" alt="image" src="https://github.com/user-attachments/assets/fb82afab-ad6e-4acc-85f0-962fb09589f5" />
+
+   
+<img width="1192" height="275" alt="image" src="https://github.com/user-attachments/assets/7d4e6e16-ea18-4251-a500-08d35835f625" />
+
+<img width="1162" height="254" alt="image" src="https://github.com/user-attachments/assets/3486e793-35fa-4f7d-89e3-5612c20ec89b" />
+
+pod is subset of replicaset.  pod name is replicaset-name-<random-char>
+
+now pod name will never be duplicate
+
+lets delete one of the pod:
+
+<img width="1187" height="461" alt="image" src="https://github.com/user-attachments/assets/bb979c00-4640-4dac-9719-2d21f5dbbde7" />
+
+Responsibility of replicaset -> is to make sure the desired number of pods running all the time.
+
+
+
+suppose, lets give 10 replica sets:
+
+<img width="1126" height="912" alt="image" src="https://github.com/user-attachments/assets/f0ddc381-691e-4892-bdc0-02cfaf46b7f2" />
+
+<img width="1286" height="851" alt="image" src="https://github.com/user-attachments/assets/84d7bff4-daa7-47fd-86f1-f812b24aa614" />
+
+
+
+even after deleting one pod, the replicaset automatically creates one more pod immediately, without any down time
+
+
+
+
+
+
+
 
 
 
