@@ -118,7 +118,7 @@ questions: If we want pod to expose internally - we use: CusterIP
 3. statefulset
 4. daemonset
 
-
+<br>
 1. replicaset
 
    When there is lot of traffic, you need to increase number of pods to handle the traffic, in that case - we cannot give nginx-1, nginx-2....etc
