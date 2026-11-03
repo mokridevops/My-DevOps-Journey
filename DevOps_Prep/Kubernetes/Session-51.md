@@ -48,10 +48,10 @@ this is the IP address for the service
 
 2. nodePort -> expose pod to outside world in internet
    http://ec2-ip:nodePort -> clusterIP -> pod
-30000 - 32767 -> ephemeral ports for nodePort
-Kubernetes opens one ephemeral nodePort in all the worker nodes, if you hit any worked node on that nodePort, traffic will be forwarded to cluserIP and then to the Pod
+30000 - 32767 -> ephemeral ports for nodePort <br>
+Kubernetes opens one ephemeral nodePort in all the worker nodes, if you hit any worked node on that nodePort, traffic will be forwarded to cluserIP and then to the Pod <br>
 
-   if any user hits one of the EC2 instance, it will forward to clusterIP, and from ClusterIP it will forward to Pod.
+   if any user hits one of the EC2 instance, it will forward to clusterIP, and from ClusterIP it will forward to Pod. <br>
 
 <img width="1291" height="776" alt="image" src="https://github.com/user-attachments/assets/e1c8fd75-55ab-405b-8f26-253de7d96fb0" />
 
