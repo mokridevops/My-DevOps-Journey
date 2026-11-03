@@ -155,13 +155,6 @@ suppose, lets give 10 replica sets:
 even after deleting one pod, the replicaset automatically creates one more pod immediately, without any down time
 
 
+------------
+*** deployment:
 
-
-
-
-
-
-
-
-
-****
