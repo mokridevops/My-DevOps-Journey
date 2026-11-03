@@ -156,5 +156,5 @@ even after deleting one pod, the replicaset automatically creates one more pod i
 
 
 ------------
-*** deployment:
+### deployment:
 
