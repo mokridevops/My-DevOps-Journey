@@ -8,11 +8,11 @@
 
 ### Docker installation instructions:
 
-sudo dnf -y install dnf-plugins-core
-sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo -y
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-sudo systemctl enable --now docker
-sudo usermod -aG docker ec2-user
+sudo dnf -y install dnf-plugins-core <br>
+sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo -y <br>
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin <br>
+sudo systemctl enable --now docker <br>
+sudo usermod -aG docker ec2-user <br>
 
 <img width="943" height="524" alt="image" src="https://github.com/user-attachments/assets/5468ea65-1b92-4baf-9068-ac16efcdbf4e" />
 
