@@ -179,20 +179,20 @@ mostly our core apiversion is v1:
 we will have everything we need in v1 apiversion only
 
 
-apiversion:
-kind:
-metadata:
-spec: the specifications that we give to run an image
+apiversion: <br>
+kind: <br>
+metadata: <br>
+spec: the specifications that we give to run an image <br>
 
 
-To create a Namespace:
-namespace.yaml
-apiVersion: v1
-kind: Namespace
-metadata: 
-  name: custom-namespace  # this is the name of the namespace
-  labels:
-    environment: production
+To create a Namespace: <br>
+namespace.yaml <br>
+apiVersion: v1 <br>
+kind: Namespace <br>
+metadata: <br>
+  name: custom-namespace  # this is the name of the namespace <br>
+  labels: <br>
+    environment: production <br>
 
 
     <img width="452" height="193" alt="image" src="https://github.com/user-attachments/assets/bd837a67-1853-4bc0-8e36-9a79ee35c176" />
