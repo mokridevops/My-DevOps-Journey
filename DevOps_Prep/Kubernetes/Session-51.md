@@ -155,6 +155,42 @@ suppose, lets give 10 replica sets:
 even after deleting one pod, the replicaset automatically creates one more pod immediately, without any down time
 
 
+when we change the version of the image, and re run the command: kubectl apply -f replicaset.yaml -> it runs again with 10 pods running, but it doesnot care about the new version that needs to be deployed into pod <br>
+
+replicasets only responsibility is to take care of maintaining the total number of pods that is given in the yaml file, it doesnot care about the new version of the image.
+
+so, a new concept called deployment is introduced.
+
 ------------
 ### deployment:
+
+1. remove old code <br>
+2. download new code <br>
+3. restart the server <br>
+
+pods and containers are immutable and ephimeral (not long lived) <br>
+
+create another version of the image
+change the image in pod definition
+then apply new image version
+
+present image version -> v1
+upcomming image version -> v2
+
+present pods are running with image version v1
+
+4 pods
+
+### rolling update:
+
+4 pods,
+
+it will create new pod with version v2, deleted one old pod
+it will create 2nd new pod with version v2, delete one old pod
+it will create 3rd new pod with version v2, delete one old pod
+it will create 4th new pod with version v2, delete don old pod
+
+so, finally all the 4 pods will have version v2.
+
+
 
