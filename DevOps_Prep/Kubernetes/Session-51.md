@@ -183,12 +183,12 @@ present pods are running with image version v1
 
 ### rolling update:
 
-4 pods,
+4 pods, <br>
 
-it will create new pod with version v2, deleted one old pod
-it will create 2nd new pod with version v2, delete one old pod
-it will create 3rd new pod with version v2, delete one old pod
-it will create 4th new pod with version v2, delete don old pod
+it will create new pod with version v2, deleted one old pod <br>
+it will create 2nd new pod with version v2, delete one old pod <br>
+it will create 3rd new pod with version v2, delete one old pod <br>
+it will create 4th new pod with version v2, delete one old pod <br>
 
 so, finally all the 4 pods will have version v2.
 
