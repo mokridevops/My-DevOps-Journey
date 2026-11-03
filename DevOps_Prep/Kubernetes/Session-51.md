@@ -62,7 +62,7 @@ Kubernetes opens one ephemeral nodePort in all the worker nodes, if you hit any 
 
 With NodePorts since - the Pod will be able to communicate with outside world, it is not that safe.
 
-Currently they are open to public, but when we implement in production system - we put them in public subnet, hence they will be protected from outside public.
+Currently they are open to public, but when we implement in production system - we put them in private subnet, hence they will be protected from outside public.
 
 3. Load Balancer -
 
