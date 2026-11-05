@@ -228,7 +228,7 @@ pod is a subset of replicaset, replicaset is a subset of deployment
 <img width="623" height="205" alt="image" src="https://github.com/user-attachments/assets/c6dcd905-481a-443f-a1f0-7f0f7fa34a8d" />
 
 > watch kubectl get pods
-> watch -n 0.1 kubectl get pods
+> watch -n 0.1 kubectl get pods - this watch the pods refreshing and bringing down the pod and getting the new pods
 
 <img width="1056" height="865" alt="image" src="https://github.com/user-attachments/assets/e6c1c606-652c-459a-bcbb-046a9cf56e47" />
 
