@@ -157,7 +157,7 @@ even after deleting one pod, the replicaset automatically creates one more pod i
 
 when we change the version of the image, and re run the command: kubectl apply -f replicaset.yaml -> it runs again with 10 pods running, but it doesnot care about the new version that needs to be deployed into pod <br>
 
-replicasets only responsibility is to take care of maintaining the total number of pods that is given in the yaml file, it doesnot care about the new version of the image.
+replicasets only responsibility is to take care of maintaining the total number of pods that is given in the yaml file, **it doesnot care about the new version of the image.**
 
 so, a new concept called deployment is introduced.
 
@@ -191,6 +191,65 @@ it will create 3rd new pod with version v2, delete one old pod <br>
 it will create 4th new pod with version v2, delete one old pod <br>
 
 so, finally all the 4 pods will have version v2.
+
+We can change the replicaset's count on the command line itself:
+
+> kubectl edit rs frontend
+
+<img width="816" height="893" alt="image" src="https://github.com/user-attachments/assets/f16a46e5-d83c-4d49-9f39-39ffeaf07ce9" />
+
+it opens vi editor, and we can edit the replicaset count:
+
+<img width="1539" height="901" alt="image" src="https://github.com/user-attachments/assets/fc378aea-971f-4de9-bfda-ce76ab26125e" />
+
+<img width="749" height="209" alt="image" src="https://github.com/user-attachments/assets/aeef717e-22c0-4559-b026-65ab4efe675b" />
+
+the number of pods got changed to 6 instead of 10
+
+
+### Deployment:
+
+<img width="557" height="292" alt="image" src="https://github.com/user-attachments/assets/e4448df5-163a-434b-909d-6abee717d913" />
+
+
+<img width="773" height="177" alt="image" src="https://github.com/user-attachments/assets/964bcbc8-b65d-4c61-a243-df4ff5e3b329" />
+
+if you notice, deployment created a replica set, the replica set created pods
+
+<img width="1111" height="337" alt="image" src="https://github.com/user-attachments/assets/260e4337-0414-437e-bb60-5e3f13f967b3" />
+
+
+deployment creates replicaset, replicaset creates pods
+
+pod is a subset of replicaset, replicaset is a subset of deployment
+
+<img width="1163" height="345" alt="image" src="https://github.com/user-attachments/assets/97e3c78f-5f07-4817-9863-efcaa535b972" />
+
+<img width="623" height="205" alt="image" src="https://github.com/user-attachments/assets/c6dcd905-481a-443f-a1f0-7f0f7fa34a8d" />
+
+> watch kubectl get pods
+> watch -n 0.1 kubectl get pods
+
+<img width="1056" height="865" alt="image" src="https://github.com/user-attachments/assets/e6c1c606-652c-459a-bcbb-046a9cf56e47" />
+
+
+
+> kubectl edit deployment nginx
+>
+> 
+<img width="838" height="928" alt="image" src="https://github.com/user-attachments/assets/f20f62e4-0700-43ef-a871-e8eef293937e" />
+
+
+rolling update is - 0 downtime deployment
+
+<img width="498" height="492" alt="image" src="https://github.com/user-attachments/assets/eb8708d4-e3a9-482c-9c2f-efe2dfb53f12" />
+
+deployment creates -> replicaset -> pods -> containers
+
+
+
+
+
 
 
 
