@@ -248,6 +248,62 @@ deployment creates -> replicaset -> pods -> containers
 
 
 
+---------------
+
+Now, lets apply the concepts till now to our Roboshop project:
+
+we need to create the following:
+1. namespace
+2. deployment, not replicaset or pods
+3. ConfigMaps - to give the config that is required by pods
+4. Secrets - for security credentials
+5. Service - for pod to pod communication - internal - custerIp, external Load Balancer
+
+
+
+<img width="380" height="383" alt="image" src="https://github.com/user-attachments/assets/9c5c558f-0f64-495f-b761-34d98e4dd41d" />
+
+
+<img width="895" height="991" alt="image" src="https://github.com/user-attachments/assets/938454ff-0d8b-448d-b456-b993f29be830" />
+
+<img width="1071" height="929" alt="image" src="https://github.com/user-attachments/assets/8b891f4a-39a9-4ff0-adf4-05dae2e90204" />
+
+<img width="1683" height="978" alt="image" src="https://github.com/user-attachments/assets/1fe3a262-5c74-4dd1-bdae-dbe152afc136" />
+
+to go and check the pods in a namespace:
+
+> kubectl get pods -n <namespace>
+> kubectl get pods -n roboshop
+
+<img width="1213" height="579" alt="image" src="https://github.com/user-attachments/assets/bf5d4588-573e-4070-892c-0524cbe64e15" />
+
+now, lets do catalogue:
+
+
+<img width="1885" height="992" alt="image" src="https://github.com/user-attachments/assets/1c46b482-5324-4eae-ab8d-87c8aa838588" />
+
+<img width="1426" height="992" alt="image" src="https://github.com/user-attachments/assets/abfa3a83-cf62-4306-9b83-128cef40bbca" />
+
+<img width="1893" height="1099" alt="image" src="https://github.com/user-attachments/assets/bf7e5186-9a7d-4510-a1b4-b685ef6d9a04" />
+
+
+
+since, curl is not installed here, we can have one debug pod, to resolve these issues:
+
+
+
+<img width="737" height="445" alt="image" src="https://github.com/user-attachments/assets/7dec98a9-8d0c-48a5-af90-bba16fc5a8ca" />
+
+
+
+<img width="591" height="276" alt="image" src="https://github.com/user-attachments/assets/b8f1007f-af64-416b-bccc-62a7e36c5e5c" />
+
+
+<img width="651" height="104" alt="image" src="https://github.com/user-attachments/assets/dce2ecd1-4551-4ae7-9261-78542282e2f5" />
+
+Mongo -> should have come as true, -> need to check where is the issue.
+
+
 
 
 
