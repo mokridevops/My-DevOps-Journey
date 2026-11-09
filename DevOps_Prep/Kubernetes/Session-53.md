@@ -40,7 +40,7 @@ ephemeral volumes:
 2. hostpath
 
    emptyDir is created whenever a pod is created, and deleted when the pod is deleted.
-   Containers in the same pod share same network and storage.  We use emptyDir to ship pod logs to ELK.
+   Containers in the same pod share same network and storage.  emptyDir is used to share the storage between containers in the pod.  A usecase is - we use emptyDir to ship pod logs to ELK.
    
    Volumes -> Pod level
    VolumeMounts -> We need to mount to volume to individual container.
