@@ -167,7 +167,9 @@ this policy is about mounting the volumes
 
 6. Create PV
 
+lets create the disk in 1d,
 
+<img width="656" height="466" alt="image" src="https://github.com/user-attachments/assets/e15510ed-3746-4368-8d8a-6c781778023a" />
 
 
 
