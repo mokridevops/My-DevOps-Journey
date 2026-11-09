@@ -29,3 +29,17 @@ EBS vs EFS:
 9. EBS does not need Security Group, EFS requires Security Groups.
 
 
+
+Two types of volumes:
+1. Ephemeral volumes
+2. Permanent volumes
+
+ephemeral volumes:
+==================
+1. epmtyDir
+2. hostpath
+
+3. emptyDir is created whenever a pod is created, and deleted when the pod is deleted.
+   Containers in the same pod share same network and storage
+   
+   
