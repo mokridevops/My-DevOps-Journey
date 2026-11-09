@@ -247,6 +247,59 @@ now, lets give this PVC to POD:
 <img width="805" height="456" alt="image" src="https://github.com/user-attachments/assets/5f8463dc-64e9-48e3-a6bc-e6bedefcdfff" />
 
 
+<img width="767" height="425" alt="image" src="https://github.com/user-attachments/assets/8645b1b4-b161-452e-a06b-112d99389911" />
+
+<img width="655" height="398" alt="image" src="https://github.com/user-attachments/assets/5824d117-5e60-4ee6-89fe-acdd969981ce" />
+
+to describe a pod:
+> kubectl describe pod ebs-static
+
+I entered into the pod and created the index.html file
+
+<img width="624" height="385" alt="image" src="https://github.com/user-attachments/assets/1aae9b6a-033b-446c-ab68-14d5d1c4af7c" />
+
+
+now, I will delete the pod, and create another pod, and want to check if the data is still there or deleted?
+
+<img width="525" height="213" alt="image" src="https://github.com/user-attachments/assets/befe3039-06d9-4e51-bc2d-85c266e5932b" />
+
+<img width="948" height="287" alt="image" src="https://github.com/user-attachments/assets/79e43e96-4917-4e9c-b2d4-fe26adcb0aef" />
+
+that volume became available now
+
+now lets create the pod again
+
+<img width="540" height="193" alt="image" src="https://github.com/user-attachments/assets/8aed9967-f0f1-4dcd-b43e-f0458f86019d" />
+
+<img width="522" height="152" alt="image" src="https://github.com/user-attachments/assets/c3131cf3-7026-4b89-ad07-a0aa059dc6ea" />
+
+<img width="356" height="455" alt="image" src="https://github.com/user-attachments/assets/a1cce98b-7c99-4ee2-a56b-0f791ff23998" />
+
+you can see index.html is still available here, it did not disappear when pod is deleted, so this is persistent volume
+
+
+now, due to our luck kubenetes is sending the yaml file that we are running in to zone 1d, it can go to zone 1b too, if it goes to zone 1b, then our volume will be in a different zone, hence it will not mount.
+
+for this - the is a facility in kubernetes to select the node - called -> node selector
+
+Scheduler:
+----------
+responsible to schedule the pods in the nodes, it uses different considrations to select the node.  We can control this.
+
+
+<img width="834" height="188" alt="image" src="https://github.com/user-attachments/assets/87d17a96-8991-4bf5-9dbf-140ec6661828" />
+
+<img width="881" height="460" alt="image" src="https://github.com/user-attachments/assets/6c5c4cbb-1d8d-4544-9823-2c673ad7e8a8" />
+
+we are telling kubernetes to send the pod to the node which is in us-east-1b
+
+
+
+
+
+
+
+
 
 
 
