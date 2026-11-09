@@ -172,10 +172,58 @@ lets create the disk in 1d,
 <img width="656" height="466" alt="image" src="https://github.com/user-attachments/assets/e15510ed-3746-4368-8d8a-6c781778023a" />
 
 
+<img width="947" height="471" alt="image" src="https://github.com/user-attachments/assets/1e477510-eed0-411a-b5e7-a2169cc91e7a" />
+
+vol-08d48552c12f0bae2
+
+now, creating PV for the above EBS disk created for 2 GB:
+
+<img width="773" height="446" alt="image" src="https://github.com/user-attachments/assets/689b9beb-e57f-458f-9964-a0f9cf6bf378" />
+
+<img width="872" height="493" alt="image" src="https://github.com/user-attachments/assets/ad3c8849-7fb5-4ce0-a445-2474a3309153" />
+
+<img width="629" height="460" alt="image" src="https://github.com/user-attachments/assets/63da2bdb-8cc9-4622-9984-6772af2b35f2" />
+
+we need to give the same 2 GB, and also list the Volume Handle: the volume name that we got earlier, while creating volumes
 
 
 
+<img width="629" height="460" alt="image" src="https://github.com/user-attachments/assets/224be068-94fd-402a-9e88-b22f7598155c" />
+
+accessmodes
+===========
+
+<img width="629" height="460" alt="image" src="https://github.com/user-attachments/assets/2fea788e-0ef5-45bb-a9d1-68b8cbc9f0b6" />
 
 
+ 1.   readWriteOnce -> at a time only one node can access. pods in that node can access
+ 2.   ReadOnlyMany -> at a time multiple nodes can readOnly.
+ 3.   ReadWriteMany -> at a time multiple nodes can read and write.
+ 4.   ReadWriteOncePod > only one pod can read and write.
 
-   
+    
+    
+    <img width="561" height="260" alt="image" src="https://github.com/user-attachments/assets/dad4899e-75bb-472a-97ed-49387d8612ed" />
+
+<img width="668" height="239" alt="image" src="https://github.com/user-attachments/assets/fdeb7f0b-c072-4550-9585-fa687ad61244" />
+
+<img width="668" height="239" alt="image" src="https://github.com/user-attachments/assets/2a616271-bcd5-4907-ad71-eff73527696c" />
+
+RWO - ReadWriteOnce
+
+Reclaim policy -> 
+---------------
+1. delete -> automatically removes both the PV object from kubernetes and the actual storage
+2. Retain -> data will be persisted even when PV and Pod are deleted
+3. Recycle -> data will be erased, but disk will be there.
+
+
+PVC: logical representation - i.e. it claims this disk space for pod
+====
+now disk is created, and PV is also bound to that disk...
+
+<img width="1141" height="588" alt="image" src="https://github.com/user-attachments/assets/f60bf4da-d8cc-4487-a13a-13143aecd61d" />
+
+son -> mother -> father -> wallet
+POD    PVC        PV       Storage
+
