@@ -36,7 +36,7 @@ Two types of volumes:
 
 ephemeral volumes:
 ==================
-1. epmtyDir
+1. emptyDir
 2. hostpath
 
 3. emptyDir is created whenever a pod is created, and deleted when the pod is deleted.
