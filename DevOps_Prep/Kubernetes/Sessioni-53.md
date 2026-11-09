@@ -39,7 +39,44 @@ ephemeral volumes:
 1. emptyDir
 2. hostpath
 
-3. emptyDir is created whenever a pod is created, and deleted when the pod is deleted.
-   Containers in the same pod share same network and storage
+   emptyDir is created whenever a pod is created, and deleted when the pod is deleted.
+   Containers in the same pod share same network and storage.  We use emptyDir to ship pod logs to ELK.
    
+   Volumes -> Pod level
+   VolumeMounts -> We need to mount to volume to individual container.
+
+<img width="1647" height="834" alt="image" src="https://github.com/user-attachments/assets/91fabd7e-de8b-44e9-985d-5c3228f4f748" />
+
+we are mounting the volumes -> nginx-logs to the containers -> nginx and nginx-logs
+<img width="1017" height="490" alt="image" src="https://github.com/user-attachments/assets/fe82e7d7-9b7d-4f2a-89f3-d0f09f823607" />
+
+<img width="1126" height="448" alt="image" src="https://github.com/user-attachments/assets/00e69e96-9200-4508-a482-cdf7f8dcd2c9" />
+
+we see that almalinux is able to access these logs
+
+<img width="1191" height="654" alt="image" src="https://github.com/user-attachments/assets/1d47c7f4-ed07-4748-9f6b-06f7c63fadfd" />
+
+
+
+<img width="802" height="385" alt="image" src="https://github.com/user-attachments/assets/9aac504c-6bb2-43b9-a653-8863acdd6814" />
+
+### *** We create emptyDir -> to shift the pod logs from pod to ELK***
+
+hostPath
+========
+if you store pod data in the host, when pod is deleted and recreated, it can be scheduled in any other node, however pod can't mount data in other node.
+
+hostPath is used to ship the host logs outside of Kubernetes like ELK (Elastic Log Stash Kibana) - this is sever that hosts the logs.  We mount hostPath to containers and allow the containers to ship the logs to ELK.
+
+hostPath is not secured, we use in rare cases like shipping host logs to ELk, here we can take a precaution of <B>readonly true..</b>
+
+Note: we should store the pod related logs in hostPath, we should use hostPath to ship the logs to ELK.
+
+
+
+
+
+
+
+
    
