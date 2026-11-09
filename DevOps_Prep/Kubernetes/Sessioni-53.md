@@ -227,3 +227,27 @@ now disk is created, and PV is also bound to that disk...
 son -> mother -> father -> wallet
 POD    PVC        PV       Storage
 
+
+<img width="1882" height="811" alt="image" src="https://github.com/user-attachments/assets/a3b9b3b2-73d7-4f77-9100-73d529804897" />
+
+
+<img width="1471" height="933" alt="image" src="https://github.com/user-attachments/assets/f4a686b7-9a17-49da-8c44-39851aa4c06e" />
+
+<img width="1699" height="931" alt="image" src="https://github.com/user-attachments/assets/93d3afb0-d2b7-4676-8537-b0139de7e9e5" />
+
+now, lets give this PVC to POD:
+
+
+
+<img width="932" height="391" alt="image" src="https://github.com/user-attachments/assets/9fd3cdb1-5926-40d9-a3de-448d8ad0da60" />
+
+
+<img width="700" height="485" alt="image" src="https://github.com/user-attachments/assets/3a38139d-5f00-4dc1-be1a-1561a0c1a59a" />
+
+<img width="805" height="456" alt="image" src="https://github.com/user-attachments/assets/5f8463dc-64e9-48e3-a6bc-e6bedefcdfff" />
+
+
+
+
+
+
