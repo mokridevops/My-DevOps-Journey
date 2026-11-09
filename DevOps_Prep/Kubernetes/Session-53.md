@@ -221,6 +221,7 @@ Reclaim policy ->
 PVC: logical representation - i.e. it claims this disk space for pod
 ====
 now disk is created, and PV is also bound to that disk...
+PVC is claim against PV to use the storage disk
 
 <img width="1141" height="588" alt="image" src="https://github.com/user-attachments/assets/f60bf4da-d8cc-4487-a13a-13143aecd61d" />
 
