@@ -64,11 +64,11 @@ whatever change we want to do, we create feature branch.  When development is co
 We can do the deployment into DEV, UAT, PROD from main branch.  When PROD is success, we can tag the commit using our version. v1.4.0
 
 In olden days - around 10 years ago, people were using:
-main branch
-develop branch
-release branch
-feature branch
-hotfix branch
+main branch <br>
+develop branch <br>
+release branch <br>
+feature branch <br>
+hotfix branch <br>
 
 -> Same code across all the environments, configuration can be changed.
 
