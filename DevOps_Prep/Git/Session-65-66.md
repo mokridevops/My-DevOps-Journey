@@ -84,8 +84,31 @@ hotfix branch
   2. Mixed -> code comes to workspace
   3. Hard -> code will be deleted
 
+     > git reset --soft HEAD~1
+     it pulls the code from committed state to stagging area, HEAD~1 -> means 1 commit before
+
+     <img width="1095" height="934" alt="image" src="https://github.com/user-attachments/assets/70d3064e-3163-4553-b982-e1088739570e" />
+
+> git log --oneline
+<img width="1110" height="667" alt="image" src="https://github.com/user-attachments/assets/8b3ee45b-2dfd-4996-b77f-f855107afb44" />
+
+<img width="984" height="227" alt="image" src="https://github.com/user-attachments/assets/96d0ec0f-c248-43c6-9dbc-93d263bfe4d1" />
+
+> git reset HEAD~1  -> this is mixed -> it is bringing the committed code to workspace.
+<img width="1008" height="348" alt="image" src="https://github.com/user-attachments/assets/e02a651b-fa7c-4a57-a4a5-ef90bf36f306" />
+<img width="1032" height="595" alt="image" src="https://github.com/user-attachments/assets/87e09919-2172-404a-b4f6-9ef136394b15" />
+
+
+
+<img width="1068" height="243" alt="image" src="https://github.com/user-attachments/assets/5037b0e1-b148-475e-8470-b677d4a15bba" />
+
+> git reset --hard 28bf896
+
+<img width="1074" height="728" alt="image" src="https://github.com/user-attachments/assets/0e3eed0a-3bd3-4f79-a10f-978412431d1d" />
+
 <img width="821" height="442" alt="image" src="https://github.com/user-attachments/assets/65399dd6-c5b7-4ddd-8c46-8c296bdfab33" />
 
+<img width="999" height="573" alt="image" src="https://github.com/user-attachments/assets/6b0d52b8-4ee9-42ee-856f-ab88515bca0a" />
 
 Git Squash: interactive rebase
 ===========
