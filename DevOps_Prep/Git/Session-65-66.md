@@ -33,6 +33,19 @@ rebase:
 
 <img width="1269" height="637" alt="image" src="https://github.com/user-attachments/assets/2d1e04c0-7b98-47af-9cf7-bece42229177" />
 
+use merge, if a branch is used by multiple users.
+use rebase for private and local branches.
+
+<img width="999" height="437" alt="image" src="https://github.com/user-attachments/assets/73746193-1476-4741-bbf9-069d72701fab" />
 
 
+Git Conflicts:
+==============
+
+While merge if git finds different code in the same line number, then git give conflicts. It is the developers responsibility who developed this code to resolve the conflict.
+
+eggdosa-suresh
+eggdosa-ramesh
+
+Before pushing or raising PR, pull the changes and resolve conflicts locally.
 
