@@ -17,4 +17,5 @@ NodePort => expose through node's IP and port on each kubernetes node
 LoadBalancer => one cloud load balancer per service
 Ingress => One load balancer for many services with routing on path based and host based.
 
-### 3) what is startup probe, readyness probe and liveness probe?
+### 3) what is startup probe, readiness probe and liveness probe?
+
