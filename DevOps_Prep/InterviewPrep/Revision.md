@@ -6,3 +6,15 @@ Ans:  Due to the following reasons:
 4) Terraform has full life cycle management - 1) Create 2) Update 3) Replace 4) Destroy
 5) Drift Detection - Terraform, anisible not
 6) Multicloud support - Terraform, ansible not
+
+
+### 2) what is NodePort, LoadBalancer and Ingress?
+Ans: NodePort exposes a service on a port of every Kubernetes node, and is mainly used for testing.
+LoadBalancer creates a cloud provider load balancer and exposes a service externally, but each service typically gets its own load balancer.
+Ingress is a layer-7 routing mechanism that sits in front of the Load Balancer and does Path Based routing and host based routing for the services using the single load balancer, making it preferred solutions for production Kubernetes environments.
+
+NodePort => expose through node's IP and port on each kubernetes node
+LoadBalancer => one cloud load balancer per service
+Ingress => One load balancer for many services with routing on path based and host based.
+
+### 3) what is startup probe, readyness probe and liveness probe?
