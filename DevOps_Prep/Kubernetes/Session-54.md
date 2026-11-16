@@ -16,3 +16,18 @@ EBS Dynamic:
 StorageClass -> used to create storage and respective PV automatically
 for example, we create one storageClass for EBS, one storageClass for EFS 
 
+
+emptyDir.yaml
+-------------
+apiVersion: v1
+kind: Pod
+metadata: 
+ name: nginx
+spec: 
+  containers: 
+  - image: nginx
+    name: nginx
+  - image: almalinux:9
+    name: almalinux
+    command: ["sleep","1000"]
+    
